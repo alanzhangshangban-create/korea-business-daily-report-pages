@@ -1,4 +1,4 @@
-import { renderHistory, renderHome, renderReport } from './report-view.mjs';
+import { refreshPublicNews, renderHistory, renderHome, renderReport } from './report-view.mjs';
 
 const SESSION_PASSWORD_KEY = 'korea-report-session-password';
 const FAILURE_COUNT_KEY = 'korea-report-failure-count';
@@ -46,7 +46,10 @@ export async function unlockEnvelope(envelope, password) {
 }
 
 function showPayload(root, payload) {
-  if (payload.kind === 'report') renderReport(root, payload.report);
+  if (payload.kind === 'report') {
+    renderReport(root, payload.report);
+    void refreshPublicNews(root);
+  }
   else if (payload.kind === 'home') renderHome(root, payload);
   else if (payload.kind === 'history') renderHistory(root, payload);
   else throw new Error('Unsupported encrypted content');
