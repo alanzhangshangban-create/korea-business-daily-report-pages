@@ -16,18 +16,16 @@ const refreshStageLabels = {
 };
 
 const refreshBindings = new WeakMap();
-const latestPublishedReportUrl = 'https://alanzhangshangban-create.github.io/korea-business-daily-report-pages/daily/latest/';
+const latestPublishedReportUrl = 'https://chulanzhang659-spec.github.io/korea-business-daily-report-pages/daily/latest/';
 
 export function reportViewModel(report) {
   return {
     sections,
-    overall: report.overall,
     units: [...(report.business_units ?? []), report.overall].filter(Boolean),
     brands: [...(report.brands ?? [])],
     stores: [...(report.stores ?? [])],
     news: [...(report.news ?? [])],
     metricStatuses: [...(report.metric_statuses ?? [])],
-    ongredientsChannels: report.ongredients_channels,
   };
 }
 
@@ -108,7 +106,7 @@ function verifiedLatestUrl(detail) {
     || !new RegExp(`^${compactDate}-[0-9a-f]{12}$`).test(detail.release_id)) return null;
   if (typeof detail.latest_url !== 'string' || detail.latest_url !== detail.latest_url.trim()) return null;
   const authority = detail.latest_url.match(/^https:\/\/([^/?#]+)(?:[/?#]|$)/)?.[1];
-  if (authority !== 'alanzhangshangban-create.github.io') return null;
+  if (authority !== 'chulanzhang659-spec.github.io') return null;
   let latestUrl;
   try {
     latestUrl = new URL(detail.latest_url);
@@ -116,7 +114,7 @@ function verifiedLatestUrl(detail) {
     return null;
   }
   if (latestUrl.protocol !== 'https:'
-    || latestUrl.origin !== 'https://alanzhangshangban-create.github.io'
+    || latestUrl.origin !== 'https://chulanzhang659-spec.github.io'
     || latestUrl.username
     || latestUrl.password
     || latestUrl.port
