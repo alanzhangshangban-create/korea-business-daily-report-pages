@@ -16,7 +16,8 @@ const refreshStageLabels = {
 };
 
 const refreshBindings = new WeakMap();
-const latestPublishedReportUrl = 'https://chulanzhang659-spec.github.io/korea-business-daily-report-pages/daily/latest/';
+const latestPublishedReportUrl = 'https://alanzhangshangban-create.github.io/korea-business-daily-report-pages/daily/latest/';
+const headerTimers = new WeakMap();
 
 export function reportViewModel(report) {
   return {
@@ -544,6 +545,13 @@ export function renderReport(root, report, options = {}) {
     'meta',
   );
   const headActions = element('div', { className: 'head-actions' });
+  const dateBadge = addText(headActions, 'div', '', 'date');
+  dateBadge.setAttribute('title', '北京时间');
+  const nowProvider = options.nowProvider ?? (() => new Date());
+  const refreshAvailableAt = options.refreshAvailableAt ?? (nowProvider().getTime() + 600_000);
+  const dateFormat = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'Asia/Shanghai', month: 'numeric', day: 'numeric',
+  });
   const refreshPanel = element('div', { className: 'refresh-panel' });
   const refreshButton = element('button', {
     id: 'overall-refresh',
@@ -562,14 +570,37 @@ export function renderReport(root, report, options = {}) {
   refreshStatus.dataset.state = 'warning';
   refreshStatus.setAttribute('aria-live', 'polite');
   refreshStatus.setAttribute('aria-atomic', 'true');
+  let refreshing = false;
+  const updateHeader = () => {
+    const now = nowProvider();
+    dateBadge.textContent = dateFormat.format(now);
+    const remaining = Math.max(0, refreshAvailableAt - now.getTime());
+    refreshButton.disabled = refreshing || remaining > 0;
+    if (!refreshing) {
+      refreshStatus.textContent = remaining > 0
+        ? `已解锁 · ${Math.ceil(remaining / 60_000)} 分钟后可刷新`
+        : '仅重新加载已审核发布的数据，不读取 Hue';
+    }
+  };
+  updateHeader();
+  const schedule = options.schedule ?? (typeof window === 'undefined' ? null : window.setInterval.bind(window));
+  const previousTimer = headerTimers.get(root);
+  if (previousTimer !== undefined && typeof window !== 'undefined') window.clearInterval(previousTimer);
+  if (schedule) headerTimers.set(root, schedule(updateHeader, 1000));
   refreshButton.addEventListener('click', () => {
+    updateHeader();
+    if (refreshButton.disabled) return;
+    refreshing = true;
     setRefreshState(refreshButton, refreshStatus, {
       message: '正在加载最新页面',
       state: 'warning',
-      active: false,
+      active: true,
     });
     const navigate = options.navigate ?? ((url) => window.location.assign(url));
-    navigate(latestPublishedReportUrl);
+    const currentUrl = options.locationHref ?? (typeof window === 'undefined' ? latestPublishedReportUrl : window.location.href);
+    const latestUrl = new URL('../../daily/latest/', currentUrl);
+    latestUrl.searchParams.set('refresh', String(nowProvider().getTime()));
+    navigate(latestUrl.href);
   });
   refreshPanel.append(refreshButton, refreshStatus);
   headActions.append(refreshPanel);
