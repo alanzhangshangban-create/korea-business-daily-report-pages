@@ -531,15 +531,6 @@ export function renderReport(root, report, options = {}) {
   const reportDate = new Date(`${report.report_date}T00:00:00`);
   const day = Number(report.report_date.slice(-2));
   const progress = report.time_progress == null ? null : Number(report.time_progress);
-  const now = options.now ?? new Date();
-  const beijingParts = Object.fromEntries(new Intl.DateTimeFormat('en-US', {
-    timeZone: 'Asia/Shanghai',
-    year: 'numeric',
-    month: 'numeric',
-    day: 'numeric',
-  }).formatToParts(now).filter((part) => part.type !== 'literal').map((part) => [part.type, part.value]));
-  const currentDay = Number(beijingParts.day);
-  const currentMonthDays = new Date(Number(beijingParts.year), Number(beijingParts.month), 0).getDate();
   const page = element('div', { className: 'page' });
   const header = element('header', { className: 'head' });
   const heading = element('div');
@@ -553,7 +544,23 @@ export function renderReport(root, report, options = {}) {
     'meta',
   );
   const headActions = element('div', { className: 'head-actions' });
-  addText(headActions, 'div', `今日 ${currentDay} / ${currentMonthDays}`, 'date');
+  const dateBadge = addText(headActions, 'div', '', 'date');
+  const nowProvider = options.nowProvider ?? (() => options.now ?? new Date());
+  const updateDateBadge = () => {
+    const beijingParts = Object.fromEntries(new Intl.DateTimeFormat('en-US', {
+      timeZone: 'Asia/Shanghai',
+      year: 'numeric',
+      month: 'numeric',
+      day: 'numeric',
+    }).formatToParts(nowProvider()).filter((part) => part.type !== 'literal').map((part) => [part.type, part.value]));
+    const currentDay = Number(beijingParts.day);
+    const currentMonthDays = new Date(Number(beijingParts.year), Number(beijingParts.month), 0).getDate();
+    dateBadge.textContent = `今日 ${currentDay} / ${currentMonthDays}`;
+  };
+  updateDateBadge();
+  const schedule = options.schedule
+    ?? (typeof window === 'undefined' ? null : window.setInterval.bind(window));
+  schedule?.(updateDateBadge, 60_000);
   const refreshPanel = element('div', { className: 'refresh-panel' });
   const refreshButton = element('button', {
     id: 'overall-refresh',
