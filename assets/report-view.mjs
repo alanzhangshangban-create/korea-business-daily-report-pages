@@ -494,9 +494,10 @@ function renderNewsContents(root, news) {
       ['competitor', '竞品动态'],
       ['operations_ai', '平台与 AI'],
     ];
-    groups.forEach(([sectionName, title]) => {
+    const populatedGroups = groups.filter(([sectionName]) => news.some((item) => item.section === sectionName));
+    columns.style.gridTemplateColumns = `repeat(${populatedGroups.length}, minmax(0, 1fr))`;
+    populatedGroups.forEach(([sectionName, title]) => {
       const items = news.filter((item) => item.section === sectionName).slice(0, 3);
-      if (!items.length) return;
       const column = element('section', { className: 'card news-column' });
       addText(column, 'h3', title);
       const list = element('div', { className: 'news-list' });
