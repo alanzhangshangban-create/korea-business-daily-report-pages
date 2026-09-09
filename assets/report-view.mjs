@@ -2,7 +2,7 @@ const sections = [
   { id: 'overview', title: '经营概览' },
   { id: 'brands', title: '品牌表现' },
   { id: 'channels', title: '达播与自营' },
-  { id: 'intelligence', title: '行业与 AI 情报' },
+  { id: 'intelligence', title: '行业与竞品动态' },
 ];
 
 const refreshStageLabels = {
@@ -447,11 +447,10 @@ function renderNewsCard(news) {
   card.append(badges);
   addText(card, 'h3', news.headline ?? '');
   addText(card, 'p', news.summary ?? '');
-  addText(card, 'div', '值得关注', 'why');
+  addText(card, 'div', '影响分析', 'why');
   addText(card, 'p', news.why_it_matters ?? '');
   const source = element('div', { className: 'source' });
   addText(source, 'span', news.primary_source ?? '');
-  addText(source, 'span', `${news.independent_source_count ?? 0}个独立信源`);
   if (news.primary_url) {
     const link = element('a', { text: '查看原文' });
     link.href = news.primary_url;
@@ -460,10 +459,54 @@ function renderNewsCard(news) {
     source.append(link);
   }
   card.append(source);
+  if (Array.isArray(news.evidence_sources) && news.evidence_sources.length) {
+    const verification = element('details', { className: 'news-verification' });
+    addText(verification, 'summary', '交叉核验');
+    const links = element('div', { className: 'source' });
+    news.evidence_sources.forEach((evidence) => {
+      const link = element('a', { text: evidence?.name ?? '核验来源' });
+      link.href = evidence?.url ?? '#';
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      links.append(link);
+    });
+    verification.append(links);
+    card.append(verification);
+  } else {
+    addText(source, 'span', `${news.independent_source_count ?? 0}个独立信源`);
+  }
   return card;
 }
 
 function renderNewsContents(root, news) {
+  if (!news.length) {
+    root.replaceChildren(element('div', {
+      className: 'card empty',
+      text: '已完成检索与交叉核验，暂无可发布更新。',
+    }));
+    return;
+  }
+  const modern = news.every((item) => ['industry', 'competitor', 'operations_ai'].includes(item.section));
+  if (modern) {
+    const columns = element('div', { className: 'news-columns news-columns-three' });
+    const groups = [
+      ['industry', '行业动态'],
+      ['competitor', '竞品动态'],
+      ['operations_ai', '平台与 AI'],
+    ];
+    groups.forEach(([sectionName, title]) => {
+      const items = news.filter((item) => item.section === sectionName).slice(0, 3);
+      if (!items.length) return;
+      const column = element('section', { className: 'card news-column' });
+      addText(column, 'h3', title);
+      const list = element('div', { className: 'news-list' });
+      items.forEach((item) => list.append(renderNewsCard(item)));
+      column.append(list);
+      columns.append(column);
+    });
+    root.replaceChildren(columns);
+    return;
+  }
   const children = [];
   const featured = news.find((item) => item.section === 'featured');
   if (featured) {
@@ -496,7 +539,39 @@ function publicNewsUrl(locationHref, filename) {
 
 function validatePublicNews(payload) {
   const items = payload?.items;
-  if (!Array.isArray(items) || items.length !== 5) throw new Error('Invalid public news payload');
+  if (!Array.isArray(items)) throw new Error('Invalid public news payload');
+  if (payload?.schema_version === 2) {
+    if (items.length > 9) throw new Error('Invalid public news payload');
+    const counts = new Map();
+    const urls = new Set();
+    for (const item of items) {
+      if (!['industry', 'competitor', 'operations_ai'].includes(item?.section)
+        || item?.verification_status !== 'verified' || !item?.headline
+        || !item?.primary_source || item?.evidence_has_primary !== true) {
+        throw new Error('Invalid public news item');
+      }
+      counts.set(item.section, (counts.get(item.section) ?? 0) + 1);
+      if (counts.get(item.section) > 3) throw new Error('Invalid public news layout');
+      const evidence = Array.isArray(item.evidence_sources) ? item.evidence_sources : [];
+      if (!evidence.some((source) => source?.kind === 'primary')
+        || !evidence.some((source) => source?.kind === 'independent')) {
+        throw new Error('Invalid public news evidence');
+      }
+      for (const source of evidence) {
+        const url = new URL(source?.url);
+        if (url.protocol !== 'https:' || url.username || url.password || url.port) {
+          throw new Error('Invalid public news source');
+        }
+      }
+      const primaryUrl = new URL(item.primary_url);
+      if (primaryUrl.protocol !== 'https:' || urls.has(primaryUrl.href)) {
+        throw new Error('Invalid public news source');
+      }
+      urls.add(primaryUrl.href);
+    }
+    return items;
+  }
+  if (items.length !== 5) throw new Error('Invalid public news payload');
   const sections = items.map((item) => item?.section);
   if (JSON.stringify(sections) !== JSON.stringify(['featured', 'beauty', 'beauty', 'ai', 'ai'])) {
     throw new Error('Invalid public news layout');
@@ -516,11 +591,19 @@ function validatePublicNews(payload) {
 }
 
 function publicNewsStatus(status) {
-  if (status?.status === 'updated' && status.item_count === 5 && typeof status.checked_at === 'string') {
-    return '公开网页核查：已更新（已验证 5 条）';
+  const checkedAt = new Date(status?.checked_at);
+  const checkedText = Number.isNaN(checkedAt.valueOf()) ? '' : new Intl.DateTimeFormat('zh-CN', {
+    timeZone: 'Asia/Shanghai', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false,
+  }).format(checkedAt);
+  if (status?.status === 'updated' && Number.isInteger(status.item_count) && status.item_count >= 0) {
+    const competitorNote = status?.coverage?.competitor_watch ? ' · 竞品暂无可发布更新' : '';
+    return `全网检索与交叉核验：${checkedText}（北京时间）· 已验证 ${status.item_count} 条${competitorNote}`;
   }
-  if (status?.status === 'retained' && typeof status.checked_at === 'string') {
-    return '公开网页核查：本次未满足五条要求，保留上一版';
+  if (status?.status === 'checked_no_new' && checkedText) {
+    return `全网检索与交叉核验：${checkedText}（北京时间）· 暂无可发布更新`;
+  }
+  if (status?.status === 'review_required' && checkedText) {
+    return `公开源扫描：${checkedText}（北京时间）· 新线索待交叉核验`;
   }
   return '公开网页核查状态暂不可用，保留已发布新闻';
 }
@@ -670,7 +753,7 @@ export function renderReport(root, report, options = {}) {
   page.append(renderOngredientsChannels(report));
 
   const intelligence = element('section', { className: 'section', id: 'intelligence' });
-  addSectionHeader(intelligence, '行业与 AI 情报', '自动聚类与独立信源验证', '◎');
+  addSectionHeader(intelligence, '行业与竞品动态', '全网检索与交叉核验', '◎');
   const publicNewsStatus = element('div', {
     id: 'public-news-status',
     text: '公开网页新闻将在本页加载后独立核查',
@@ -680,7 +763,7 @@ export function renderReport(root, report, options = {}) {
   renderNewsContents(newsRoot, model.news);
   intelligence.append(publicNewsStatus, newsRoot);
   page.append(intelligence);
-  addText(page, 'footer', '页面仅展示已发布快照，同一新闻事件已合并重复转载。');
+  addText(page, 'footer', '仅展示通过交叉核验的公开动态；同一通稿的重复转载已合并。');
   root.replaceChildren(page);
   bindRefreshEvents(root, options);
 }

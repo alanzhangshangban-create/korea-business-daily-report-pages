@@ -1,5 +1,10 @@
 {
   "status": "updated",
-  "checked_at": "2026-09-03T06:28:44.122Z",
-  "item_count": 5
+  "checked_at": "2026-09-09T17:09:00+08:00",
+  "item_count": 2,
+  "coverage": {
+    "window": "最近24小时优先，必要时扩展至72小时",
+    "competitor_watch": "已检索指定竞品公开渠道，暂无通过交叉核验的新事件",
+    "platform_watch": "已检索微博、抖音、快手、小红书、天猫及公开行业与官方信源；受登录或索引限制的内容不计为已核验"
+  }
 }
