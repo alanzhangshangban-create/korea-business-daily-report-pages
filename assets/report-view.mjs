@@ -72,7 +72,13 @@ function weekendSalesLabel(reportDate, result) {
 
 function metricView(result, formatter = percent) {
   if (result?.status === 'READY' && result.value !== null && result.value !== undefined) {
-    return element('span', { text: formatter(result.value) });
+    const value = element('span', { text: formatter(result.value) });
+    if (result.detail?.startsWith('可比口径：')) {
+      const note = element('small', { text: result.detail, className: 'comparison-note' });
+      note.style.cssText = 'display:block;white-space:normal;min-width:170px;max-width:320px;font-size:11px;font-weight:400;line-height:1.5;margin-top:6px;color:#53607e';
+      value.append(note);
+    }
+    return value;
   }
   const link = element('span', {
     text: stateLabels[result?.status] ?? '待补数据',
@@ -371,7 +377,9 @@ function renderOngredientsChannels(report) {
   const summary = element('div', { className: 'channel-summary' });
   const lead = element('div', { className: 'channel-lead' });
   addText(lead, 'div', channelData.brand, 'channel-brand');
-  addText(lead, 'div', '飞书达人和自营按四个平台合计，不计入七品牌净销售额。小红书同时单列明细，已计入上方达人和自营总计。', 'channel-note');
+  addText(lead, 'div', channelData.unsplit_rows?.length
+    ? '达人、自营合计仅含已拆分部分，小红书已计入。未拆分渠道单列支付总计，不分配到达人或自营，不重复计入 Hue 净销售。'
+    : '飞书达人和自营按四个平台合计，不计入七品牌净销售额。小红书同时单列明细，已计入上方达人和自营总计。', 'channel-note');
   const kpis = element('div', { className: 'channel-kpis' });
   for (const [label, value] of [['达人', channelData.dabo_sales], ['自营', channelData.self_operated_sales]]) {
     const kpi = element('div', { className: 'channel-kpi' });
@@ -387,9 +395,11 @@ function renderOngredientsChannels(report) {
   card.append(meta);
 
   const rows = (channelData.rows ?? []).filter((row) => platformForChannelRow(row));
+  const unsplitRows = (channelData.unsplit_rows ?? []).filter((row) => platformForChannelRow(row) && row.date === channelData.report_date);
   const grid = element('div', { className: 'channel-platform-grid' });
   for (const platform of ['天猫', '抖音', '快手', '小红书']) {
     const platformRows = rows.filter((row) => platformForChannelRow(row) === platform);
+    const platformUnsplit = unsplitRows.filter((row) => platformForChannelRow(row) === platform);
     const details = element('details', { className: `channel-platform${platform === '小红书' ? ' channel-platform-extra' : ''}` });
     const summaryNode = element('summary');
     addText(summaryNode, 'span', platform, 'channel-platform-title');
@@ -397,9 +407,12 @@ function renderOngredientsChannels(report) {
     addText(
       summaryNode,
       'span',
-      `达人 ${money(sumChannelRows(platformRows, 'dabo_sales'))} · 自营 ${money(sumChannelRows(platformRows, 'self_operated_sales'))}`,
+      `${platformUnsplit.length ? platformRows.map(row => channelScope(row, platform)).join(' / ') + '：' : ''}达人 ${money(sumChannelRows(platformRows, 'dabo_sales'))} · 自营 ${money(sumChannelRows(platformRows, 'self_operated_sales'))}`,
       'channel-platform-values',
     );
+    for (const row of platformUnsplit) {
+      addText(summaryNode, 'span', `${channelScope(row, platform)}：支付总计 ${money(row.payment_total)}（达人、自营未拆分）`, 'channel-platform-values');
+    }
     details.append(summaryNode);
     const { wrap, body } = createTable(['业务线', '达人金额', '自营金额']);
     platformRows.forEach((row) => {
@@ -407,6 +420,14 @@ function renderOngredientsChannels(report) {
       addCell(tableRow, channelScope(row, platform));
       addCell(tableRow, money(row.dabo_sales), 'money-cell');
       addCell(tableRow, money(row.self_operated_sales), 'money-cell');
+      body.append(tableRow);
+    });
+    platformUnsplit.forEach((row) => {
+      const tableRow = element('tr');
+      addCell(tableRow, channelScope(row, platform));
+      const totalCell = element('td', { text: `支付总计 ${money(row.payment_total)}（达人、自营未拆分）`, className: 'money-cell' });
+      totalCell.colSpan = 2;
+      tableRow.append(totalCell);
       body.append(tableRow);
     });
     details.append(wrap);
