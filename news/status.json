@@ -1,5 +1,26 @@
 {
-  "status": "review_required",
-  "checked_at": "2026-09-09T12:22:56.777Z",
-  "item_count": 0
+  "status": "updated",
+  "checked_at": "2026-09-10T12:47:00+08:00",
+  "item_count": 5,
+  "coverage": {
+    "competitor_watch": false,
+    "competitors_checked": [
+      "Ne:ue",
+      "ilso/一苏",
+      "Torriden/桃瑞丹",
+      "红地球贴贴乳/贴贴霜",
+      "柏瑞美黄油乳",
+      "BIOHEAL BOH"
+    ],
+    "competitors_with_verified_update": [
+      "BIOHEAL BOH"
+    ],
+    "competitors_without_verified_update": [
+      "Ne:ue",
+      "ilso/一苏",
+      "Torriden/桃瑞丹",
+      "红地球贴贴乳/贴贴霜",
+      "柏瑞美黄油乳"
+    ]
+  }
 }
