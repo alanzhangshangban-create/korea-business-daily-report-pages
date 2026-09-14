@@ -394,6 +394,24 @@ function renderOngredientsChannels(report) {
   addText(meta, 'span', `工作表 ${channelData.sheet_name}`);
   card.append(meta);
 
+  const weekend = channelData.weekend_net_sales;
+  if (weekend && weekend.sunday_date === channelData.report_date) {
+    const strip = element('div', { id: 'feishu-weekend', className: 'comparison-strip' });
+    strip.hidden = true;
+    for (const [label, value] of [
+      [`周六净销售 · ${weekend.saturday_date}`, weekend.saturday],
+      [`周日净销售 · ${weekend.sunday_date}`, weekend.sunday],
+      ['上周末净销售合计（TTL）', weekend.total],
+    ]) {
+      const item = element('div', { className: 'comparison-item' });
+      addText(item, 'div', label, 'comparison-label');
+      addText(item, 'div', value == null ? '待补数据' : money(value), 'comparison-value');
+      strip.append(item);
+    }
+    if (weekend.missing_dates?.length) addText(strip, 'div', `缺 ${weekend.missing_dates.join('、')} 净收入`, 'channel-note');
+    card.append(strip);
+  }
+
   const rows = (channelData.rows ?? []).filter((row) => platformForChannelRow(row));
   const unsplitRows = (channelData.unsplit_rows ?? []).filter((row) => platformForChannelRow(row) && row.date === channelData.report_date);
   const grid = element('div', { className: 'channel-platform-grid' });
@@ -679,6 +697,16 @@ export function renderReport(root, report, options = {}) {
   const updateHeader = () => {
     const now = nowProvider();
     dateBadge.textContent = dateFormat.format(now);
+    const weekendStrip = page.querySelector('#feishu-weekend');
+    if (weekendStrip) {
+      const parts = Object.fromEntries(new Intl.DateTimeFormat('en-US', {
+        timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit', weekday: 'short',
+      }).formatToParts(now).map(part => [part.type, part.value]));
+      weekendStrip.hidden = parts.weekday !== 'Mon' || `${parts.year}-${parts.month}-${parts.day}` !== report.ongredients_channels?.weekend_net_sales?.display_date;
+      weekendStrip.style.display = weekendStrip.hidden ? 'none' : '';
+    }
+    // The extension owns the active data-refresh button and its progress text.
+    if (refreshButton.dataset.koreaRefresh === 'start') return;
     const remaining = Math.max(0, refreshAvailableAt - now.getTime());
     refreshButton.disabled = refreshing || remaining > 0;
     if (!refreshing) {
@@ -752,6 +780,7 @@ export function renderReport(root, report, options = {}) {
   page.append(brandsSection);
 
   page.append(renderOngredientsChannels(report));
+  updateHeader();
 
   const intelligence = element('section', { className: 'section', id: 'intelligence' });
   addSectionHeader(intelligence, '行业与竞品动态', '全网检索与交叉核验', '◎');
