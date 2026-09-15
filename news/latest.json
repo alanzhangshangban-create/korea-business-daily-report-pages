@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-10T12:47:00+08:00",
+  "generated_at": "2026-09-15T10:48:40+08:00",
   "items": [
     {
       "event_id": "loreal-cosmax-next-gen-beauty-20260909",
@@ -88,6 +88,41 @@
         {
           "name": "@cosme OSAKA 官方博客",
           "url": "https://www.cosme.net/beautist/article/2711417",
+          "kind": "independent"
+        }
+      ]
+    },
+    {
+      "event_id": "torriden-dive-in-japan-launch-20260914",
+      "section": "competitor",
+      "category": "竞品 · Torriden / 桃瑞丹",
+      "quality_level": "重点动态",
+      "published_at": "2026-08-19T16:30:00+09:00",
+      "event_occurred_at": "2026-09-14T00:00:00+09:00",
+      "first_disclosed_at": "2026-08-19T16:30:00+09:00",
+      "republished_at": "2026-09-14T00:00:00+09:00",
+      "headline": "Torriden Dive-In 升级系列于日本正式开售",
+      "summary": "Torriden 的 Dive-In 系列于 9 月 14 日在日本全国药妆店及美妆集合店陆续开售，覆盖精华、爽肤水、肌底水、舒缓面霜、面膜和面霜六个单品；升级重点包括增加低分子透明质酸用量并加入依克多因。",
+      "why_it_matters": "桃瑞丹正用核心补水系列的成分升级与线下全渠道铺货强化日本市场心智。韩国事业部可重点观察其“明星成分升级＋全系列同步焕新＋集合店首发”的新品教育节奏，以及是否向中国跨境渠道复制。",
+      "primary_source": "Torriden 日本经销方 Astena Holdings 官方发布",
+      "primary_url": "https://prtimes.jp/main/html/rd/p/000000583.000085143.html",
+      "evidence_has_primary": true,
+      "verification_status": "verified",
+      "korea_related": true,
+      "evidence_sources": [
+        {
+          "name": "Astena Holdings / Maruman H&B 官方发布",
+          "url": "https://prtimes.jp/main/html/rd/p/000000583.000085143.html",
+          "kind": "primary"
+        },
+        {
+          "name": "@cosme 新品数据库",
+          "url": "https://www.cosme.net/calendar/index/year/2026/month/09/day/14/brand_id/120757",
+          "kind": "independent"
+        },
+        {
+          "name": "集英社 MAQUIA 新品日历",
+          "url": "https://maquia.hpplus.jp/cosme/calendar/?date=2026-9-14",
           "kind": "independent"
         }
       ]
