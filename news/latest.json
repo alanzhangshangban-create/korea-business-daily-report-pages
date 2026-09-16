@@ -1,63 +1,33 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-15T10:48:40+08:00",
+  "generated_at": "2026-09-16T10:44:54+08:00",
   "items": [
     {
-      "event_id": "loreal-cosmax-next-gen-beauty-20260909",
-      "section": "industry",
-      "category": "K-Beauty · 研发与供应链",
+      "event_id": "bioheal-boh-nad-toner-japan-20260916",
+      "section": "competitor",
+      "category": "竞品 · BIOHEAL BOH",
       "quality_level": "重点动态",
-      "published_at": "2026-09-09T00:00:00+02:00",
-      "event_occurred_at": "2026-09-08T12:00:00+02:00",
-      "first_disclosed_at": "2026-09-09T00:00:00+02:00",
-      "republished_at": null,
-      "headline": "欧莱雅与科丝美诗签署下一代美妆创新合作备忘录",
-      "summary": "双方将围绕全球产品、创新原料与新剂型开展联合研发，把欧莱雅的美妆科学和消费者洞察与科丝美诗的 K-Beauty 产品开发能力结合。",
-      "why_it_matters": "国际品牌与韩国 ODM 的合作正在从供货延伸到原料、剂型和全球产品共创；韩国事业部应同步关注供应商研发能力、差异化成分和新品全球化节奏。",
-      "primary_source": "L'Oréal Groupe 官方新闻室",
-      "primary_url": "https://www.loreal.com/en/news/group/l-oreal-groupe-and-cosmax-sign-memorandum-of-understanding-to-collaborate-on-next-generation-beauty-innovations/",
+      "published_at": "2026-09-15T10:00:00+09:00",
+      "event_occurred_at": "2026-09-16T00:00:00+09:00",
+      "first_disclosed_at": "2026-09-15T10:00:00+09:00",
+      "republished_at": "2026-09-15T11:08:50+09:00",
+      "headline": "BIOHEAL BOH 在日本上市 NAD 双层精华水",
+      "summary": "新品于 9 月 16 日开售，采用 95% 水相与 5% 油相的双层配方，150mL 定价 2,200 日元；产品沟通同时覆盖 NAD、PDRN、谷胱甘肽、视黄醇与透明质酸。",
+      "why_it_matters": "竞品正把成分故事、剂型差异和多功效诉求集中到一个入门水类单品中。韩国事业部可关注其在日本市场如何用“成分组合＋可视化双层剂型”降低新品教育成本。",
+      "primary_source": "CJ Olive Young Japan 官方发布",
+      "primary_url": "https://prtimes.jp/main/html/rd/p/000000056.000148369.html",
       "evidence_has_primary": true,
       "verification_status": "verified",
       "korea_related": true,
       "evidence_sources": [
         {
-          "name": "L'Oréal Groupe 官方新闻室",
-          "url": "https://www.loreal.com/en/news/group/l-oreal-groupe-and-cosmax-sign-memorandum-of-understanding-to-collaborate-on-next-generation-beauty-innovations/",
+          "name": "CJ Olive Young Japan 官方发布",
+          "url": "https://prtimes.jp/main/html/rd/p/000000056.000148369.html",
           "kind": "primary"
         },
         {
-          "name": "韩联社",
-          "url": "https://www.yna.co.kr/amp/view/AKR20260909046500030",
-          "kind": "independent"
-        }
-      ]
-    },
-    {
-      "event_id": "korea-cosmetics-day-20260907",
-      "section": "industry",
-      "category": "K-Beauty · 政策与出口",
-      "quality_level": "重点动态",
-      "published_at": "2026-09-07T16:22:15+09:00",
-      "event_occurred_at": "2026-09-07T00:00:00+09:00",
-      "first_disclosed_at": "2026-09-07T16:22:15+09:00",
-      "republished_at": "2026-09-09T00:00:00+09:00",
-      "headline": "韩国举行 2026 化妆品日活动并强调 K-Beauty 出口与监管协作",
-      "summary": "韩国食药处披露，韩国 2025 年化妆品贸易顺差达到 101 亿美元、出口规模升至全球第二；政府、行业和学界同时讨论扩大出口与全球监管合作。",
-      "why_it_matters": "出口增长与监管协作同步推进，意味着品牌出海不仅要争取渠道和流量，还要提前准备安全评估、标签、功效证据及多市场复用的合规资料。",
-      "primary_source": "韩国食品医药品安全处（MFDS）",
-      "primary_url": "https://mfds.go.kr/eng/brd/m_61/view.do?seq=192",
-      "evidence_has_primary": true,
-      "verification_status": "verified",
-      "korea_related": true,
-      "evidence_sources": [
-        {
-          "name": "韩国食品医药品安全处（MFDS）",
-          "url": "https://mfds.go.kr/eng/brd/m_61/view.do?seq=192",
-          "kind": "primary"
-        },
-        {
-          "name": "Seoul Economic Daily",
-          "url": "https://en.sedaily.com/finance/2026/09/07/k-beauty-goes-global-as-regulators-from-12-countries-meet",
+          "name": "Dellows News",
+          "url": "https://news.dellows.jp/319400/",
           "kind": "independent"
         }
       ]
@@ -88,6 +58,66 @@
         {
           "name": "@cosme OSAKA 官方博客",
           "url": "https://www.cosme.net/beautist/article/2711417",
+          "kind": "independent"
+        }
+      ]
+    },
+    {
+      "event_id": "china-cosmetics-retail-august-20260915",
+      "section": "industry",
+      "category": "中国市场 · 美妆零售",
+      "quality_level": "重点动态",
+      "published_at": "2026-09-15T10:00:00+08:00",
+      "event_occurred_at": "2026-09-15T10:00:00+08:00",
+      "first_disclosed_at": "2026-09-15T10:00:00+08:00",
+      "republished_at": "2026-09-15T00:00:00+00:00",
+      "headline": "国家统计局：8 月化妆品零售额同比增长 4.9%",
+      "summary": "限额以上单位化妆品类 8 月零售额为 368 亿元，同比增长 4.9%；1—8 月累计 3,094 亿元，同比增长 6.1%。同期全国网上商品零售额同比增长 4.3%。",
+      "why_it_matters": "化妆品累计增速继续高于社零大盘，但线上商品增速并不等同于单品牌增长。韩国事业部应把大盘修复作为背景变量，仍以品牌净销售、渠道结构和投放效率判断经营质量。",
+      "primary_source": "中国国家统计局",
+      "primary_url": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965311.html",
+      "evidence_has_primary": true,
+      "verification_status": "verified",
+      "korea_related": false,
+      "evidence_sources": [
+        {
+          "name": "中国国家统计局",
+          "url": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965311.html",
+          "kind": "primary"
+        },
+        {
+          "name": "Trading Economics",
+          "url": "https://zh.tradingeconomics.com/china/retail-sales-annual",
+          "kind": "independent"
+        }
+      ]
+    },
+    {
+      "event_id": "coles-kbeauty-national-launch-20260914",
+      "section": "industry",
+      "category": "K-Beauty · 海外渠道",
+      "quality_level": "重点动态",
+      "published_at": "2026-09-14T16:37:00+10:00",
+      "event_occurred_at": "2026-09-14T16:37:00+10:00",
+      "first_disclosed_at": "2026-09-14T16:37:00+10:00",
+      "republished_at": "2026-09-14T00:00:00+10:00",
+      "headline": "澳洲 Coles 全国引入 100 余款护肤品并首次规模化上架 K-Beauty",
+      "summary": "Coles 宣布 9 月在全澳推出 100 余款护肤新品，首次把 K-Beauty 纳入全国性商超护肤货架；Tony Moly 已上线，COSRX 与 Beauty of Joseon 计划 9 月 25 日进店，并获得商超渠道独家安排。",
+      "why_it_matters": "K-Beauty 正从专业美妆和跨境电商进一步进入高频商超渠道。韩国事业部可观察其用明星单品、低决策门槛和渠道独家组合获取大众消费者的方式。",
+      "primary_source": "Coles 官方媒体稿",
+      "primary_url": "https://newshub.medianet.com.au/2026/09/k-beauty-is-landing-at-coles-as-supermarket-skincare-gets-a-glow-up/171275/",
+      "evidence_has_primary": true,
+      "verification_status": "verified",
+      "korea_related": true,
+      "evidence_sources": [
+        {
+          "name": "Coles 官方媒体稿",
+          "url": "https://newshub.medianet.com.au/2026/09/k-beauty-is-landing-at-coles-as-supermarket-skincare-gets-a-glow-up/171275/",
+          "kind": "primary"
+        },
+        {
+          "name": "Newsreel",
+          "url": "https://newsreel.com.au/article/business/k-beauty-powerhouses-launch-at-coles/",
           "kind": "independent"
         }
       ]
@@ -128,61 +158,31 @@
       ]
     },
     {
-      "event_id": "openai-chatgpt-images-25-20260908",
-      "section": "operations_ai",
-      "category": "AI · 内容生产",
-      "quality_level": "常规更新",
-      "published_at": "2026-09-08T18:30:00Z",
-      "event_occurred_at": "2026-09-08T18:30:00Z",
-      "first_disclosed_at": "2026-09-08T18:30:00Z",
+      "event_id": "loreal-cosmax-next-gen-beauty-20260909",
+      "section": "industry",
+      "category": "K-Beauty · 研发与供应链",
+      "quality_level": "重点动态",
+      "published_at": "2026-09-09T00:00:00+02:00",
+      "event_occurred_at": "2026-09-08T12:00:00+02:00",
+      "first_disclosed_at": "2026-09-09T00:00:00+02:00",
       "republished_at": null,
-      "headline": "ChatGPT Images 2.5 提升生成速度、主体一致性与局部编辑能力",
-      "summary": "新版向 ChatGPT、ChatGPT Work 和 Codex 用户推出，并提供更精确的局部编辑、草图输入和更快生成；API 同步提供两款图像模型。",
-      "why_it_matters": "可缩短电商主图、达人脚本配图与提案视觉的迭代时间，但品牌视觉、人物肖像、功效表达和知识产权仍需人工复核后使用。",
-      "primary_source": "OpenAI 官方发布",
-      "primary_url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+      "headline": "欧莱雅与科丝美诗签署下一代美妆创新合作备忘录",
+      "summary": "双方将围绕全球产品、创新原料与新剂型开展联合研发，把欧莱雅的美妆科学和消费者洞察与科丝美诗的 K-Beauty 产品开发能力结合。",
+      "why_it_matters": "国际品牌与韩国 ODM 的合作正在从供货延伸到原料、剂型和全球产品共创；韩国事业部应同步关注供应商研发能力、差异化成分和新品全球化节奏。",
+      "primary_source": "L'Oréal Groupe 官方新闻室",
+      "primary_url": "https://www.loreal.com/en/news/group/l-oreal-groupe-and-cosmax-sign-memorandum-of-understanding-to-collaborate-on-next-generation-beauty-innovations/",
       "evidence_has_primary": true,
       "verification_status": "verified",
-      "korea_related": false,
+      "korea_related": true,
       "evidence_sources": [
         {
-          "name": "OpenAI 官方发布",
-          "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+          "name": "L'Oréal Groupe 官方新闻室",
+          "url": "https://www.loreal.com/en/news/group/l-oreal-groupe-and-cosmax-sign-memorandum-of-understanding-to-collaborate-on-next-generation-beauty-innovations/",
           "kind": "primary"
         },
         {
-          "name": "Axios 实测报道",
-          "url": "https://www.axios.com/2026/09/08/exclusive-hands-on-with-chatgpts-new-image-editor",
-          "kind": "independent"
-        }
-      ]
-    },
-    {
-      "event_id": "openai-sol-quantum-workflow-20260908",
-      "section": "operations_ai",
-      "category": "AI · Agent 工作流",
-      "quality_level": "常规更新",
-      "published_at": "2026-09-08T00:00:00Z",
-      "event_occurred_at": "2026-09-08T00:00:00Z",
-      "first_disclosed_at": "2026-09-08T00:00:00Z",
-      "republished_at": "2026-09-09T00:00:00Z",
-      "headline": "AI Agent 已能执行并迭代部分量子芯片例行测量流程",
-      "summary": "OpenAI 与 MIT EQuS 案例显示，GPT-5.6 Sol 可在清晰信号下运行、分析并调整例行测量；信号弱或噪声较大时仍需要研究人员介入。",
-      "why_it_matters": "对日报 Agent 的启示很直接：固定、可校验的机械流程适合自动化；遇到日期缺失、字段变化或异常差异时必须停止并交由人工判断。",
-      "primary_source": "OpenAI 官方案例",
-      "primary_url": "https://openai.com/index/codex-quantum-computing-experiments/",
-      "evidence_has_primary": true,
-      "verification_status": "verified",
-      "korea_related": false,
-      "evidence_sources": [
-        {
-          "name": "OpenAI 官方案例",
-          "url": "https://openai.com/index/codex-quantum-computing-experiments/",
-          "kind": "primary"
-        },
-        {
-          "name": "SiliconReport 独立报道",
-          "url": "https://www.siliconreport.com/gpt-5-6-sol-ran-and-refined-routine-measurements-on-quantum-chips",
+          "name": "韩联社",
+          "url": "https://www.yna.co.kr/amp/view/AKR20260909046500030",
           "kind": "independent"
         }
       ]
