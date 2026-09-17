@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-16T10:44:54+08:00",
+  "generated_at": "2026-09-17T12:08:57+08:00",
   "items": [
     {
       "event_id": "bioheal-boh-nad-toner-japan-20260916",
@@ -93,6 +93,36 @@
       ]
     },
     {
+      "event_id": "oliveyoung-mobile-skinscan-20260915",
+      "section": "industry",
+      "category": "K-Beauty · 零售数字化",
+      "quality_level": "重点动态",
+      "published_at": "2026-09-15T09:00:00+08:00",
+      "event_occurred_at": "2026-09-15T09:00:00+08:00",
+      "first_disclosed_at": "2026-09-15T09:00:00+08:00",
+      "republished_at": "2026-09-15T09:52:00+08:00",
+      "headline": "Olive Young 将 AI 皮肤诊断扩展到手机端",
+      "summary": "Olive Young 把门店 Skin Scan 服务接入手机端，消费者可上传或拍摄面部照片，由 AI 分析肤质、毛孔、色素、水油与皱纹，并获得成分、商品和护理流程建议。",
+      "why_it_matters": "韩国头部美妆零售商正在把门店体验转成可反复使用的线上诊断与商品推荐入口。韩国事业部可关注其以诊断结果连接复购提醒、个性化选品和线上线下一体化运营的方式。",
+      "primary_source": "CJ Newsroom",
+      "primary_url": "https://cjnews.cj.net/%EB%A7%A4%EC%9E%A5-%EB%B0%96%EC%9C%BC%EB%A1%9C-%EB%82%98%EC%98%A8-%EC%B2%B4%ED%97%98%ED%98%95-%EB%B7%B0%ED%8B%B0cj%EC%98%AC%EB%A6%AC%EB%B8%8C%EC%98%81-%EB%AA%A8%EB%B0%94/",
+      "evidence_has_primary": true,
+      "verification_status": "verified",
+      "korea_related": true,
+      "evidence_sources": [
+        {
+          "name": "CJ Newsroom",
+          "url": "https://cjnews.cj.net/%EB%A7%A4%EC%9E%A5-%EB%B0%96%EC%9C%BC%EB%A1%9C-%EB%82%98%EC%98%A8-%EC%B2%B4%ED%97%98%ED%98%95-%EB%B7%B0%ED%8B%B0cj%EC%98%AC%EB%A6%AC%EB%B8%8C%EC%98%81-%EB%AA%A8%EB%B0%94/",
+          "kind": "primary"
+        },
+        {
+          "name": "ChosunBiz",
+          "url": "https://biz.chosun.com/en/en-retail/2026/09/15/2KKJCBYPFZGQPKCJRVYGN2BH2I/",
+          "kind": "independent"
+        }
+      ]
+    },
+    {
       "event_id": "coles-kbeauty-national-launch-20260914",
       "section": "industry",
       "category": "K-Beauty · 海外渠道",
@@ -153,36 +183,6 @@
         {
           "name": "集英社 MAQUIA 新品日历",
           "url": "https://maquia.hpplus.jp/cosme/calendar/?date=2026-9-14",
-          "kind": "independent"
-        }
-      ]
-    },
-    {
-      "event_id": "loreal-cosmax-next-gen-beauty-20260909",
-      "section": "industry",
-      "category": "K-Beauty · 研发与供应链",
-      "quality_level": "重点动态",
-      "published_at": "2026-09-09T00:00:00+02:00",
-      "event_occurred_at": "2026-09-08T12:00:00+02:00",
-      "first_disclosed_at": "2026-09-09T00:00:00+02:00",
-      "republished_at": null,
-      "headline": "欧莱雅与科丝美诗签署下一代美妆创新合作备忘录",
-      "summary": "双方将围绕全球产品、创新原料与新剂型开展联合研发，把欧莱雅的美妆科学和消费者洞察与科丝美诗的 K-Beauty 产品开发能力结合。",
-      "why_it_matters": "国际品牌与韩国 ODM 的合作正在从供货延伸到原料、剂型和全球产品共创；韩国事业部应同步关注供应商研发能力、差异化成分和新品全球化节奏。",
-      "primary_source": "L'Oréal Groupe 官方新闻室",
-      "primary_url": "https://www.loreal.com/en/news/group/l-oreal-groupe-and-cosmax-sign-memorandum-of-understanding-to-collaborate-on-next-generation-beauty-innovations/",
-      "evidence_has_primary": true,
-      "verification_status": "verified",
-      "korea_related": true,
-      "evidence_sources": [
-        {
-          "name": "L'Oréal Groupe 官方新闻室",
-          "url": "https://www.loreal.com/en/news/group/l-oreal-groupe-and-cosmax-sign-memorandum-of-understanding-to-collaborate-on-next-generation-beauty-innovations/",
-          "kind": "primary"
-        },
-        {
-          "name": "韩联社",
-          "url": "https://www.yna.co.kr/amp/view/AKR20260909046500030",
           "kind": "independent"
         }
       ]
