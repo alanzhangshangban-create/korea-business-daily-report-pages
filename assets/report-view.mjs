@@ -70,6 +70,28 @@ function weekendSalesLabel(reportDate, result) {
   return usesPreviousWeekend ? '上周末净销售' : '本周周末净销售';
 }
 
+function mondayWeekendView(report, now) {
+  const breakdown = report.overall?.weekend_sales_breakdown;
+  if (!breakdown || breakdown.sunday_date !== report.report_date) return false;
+  const parts = Object.fromEntries(new Intl.DateTimeFormat('en-US', {
+    timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit', weekday: 'short',
+  }).formatToParts(now).map((part) => [part.type, part.value]));
+  return parts.weekday === 'Mon'
+    && `${parts.year}-${parts.month}-${parts.day}` === breakdown.display_date;
+}
+
+function weekendMetricItems(unit, report, showMondayWeekend) {
+  const breakdown = unit.weekend_sales_breakdown;
+  if (showMondayWeekend && breakdown) {
+    return [
+      ['周六净销售', breakdown.saturday, money],
+      ['周日净销售', breakdown.sunday, money],
+      ['上周末净销售 TTL', breakdown.total, money],
+    ];
+  }
+  return [[weekendSalesLabel(report.report_date, unit.weekend_net_sales), unit.weekend_net_sales, money]];
+}
+
 function metricView(result, formatter = percent) {
   if (result?.status === 'READY' && result.value !== null && result.value !== undefined) {
     const value = element('span', { text: formatter(result.value) });
@@ -224,7 +246,7 @@ function targetView(value, target, timeProgress) {
   return root;
 }
 
-function renderUnit(unit, report, day, progress) {
+function renderUnit(unit, report, day, progress, showMondayWeekend) {
   const card = element('article', { className: 'card unit' });
   addText(card, 'div', unit.brand, 'unit-name');
   const sales = element('div', { className: 'sales' });
@@ -257,12 +279,12 @@ function renderUnit(unit, report, day, progress) {
   attainmentDetail.append(delta);
   attainment.append(attainmentValue, attainmentDetail);
   quality.append(returns, attainment);
-  const comparisons = element('div', { className: 'comparison-strip' });
+  const comparisons = element('div', { className: `comparison-strip${showMondayWeekend ? ' monday-weekend' : ''}` });
   for (const [label, result, formatter] of [
     ['同比', unit.year_over_year, percent],
     ['环比', unit.month_over_month, percent],
     ['本周工作日净销售', unit.weekday_net_sales, money],
-    [weekendSalesLabel(report.report_date, unit.weekend_net_sales), unit.weekend_net_sales, money],
+    ...weekendMetricItems(unit, report, showMondayWeekend),
   ]) {
     const item = element('div', { className: 'comparison-item' });
     addText(item, 'div', label, 'comparison-label');
@@ -298,7 +320,7 @@ function addMetricCell(row, result, formatter) {
   row.append(cell);
 }
 
-function fillBrandRows(body, brands, progress) {
+function fillBrandRows(body, brands, progress, report, showMondayWeekend) {
   body.replaceChildren();
   brands.forEach((brand, index) => {
     const row = element('tr');
@@ -307,7 +329,9 @@ function fillBrandRows(body, brands, progress) {
     addCell(row, money(brand.daily_net_sales), 'money-cell');
     addCell(row, money(brand.month_net_sales), 'money-cell');
     addMetricCell(row, brand.weekday_net_sales, money);
-    addMetricCell(row, brand.weekend_net_sales, money);
+    for (const [, result, formatter] of weekendMetricItems(brand, report, showMondayWeekend)) {
+      addMetricCell(row, result, formatter);
+    }
     addCell(row, money(brand.sampling_sales), 'money-cell');
     addCell(row, percent(brand.return_rate));
     const targetCell = element('td');
@@ -651,6 +675,8 @@ export async function refreshPublicNews(root, {
 }
 
 export function renderReport(root, report, options = {}) {
+  const nowProvider = options.nowProvider ?? (() => new Date());
+  const showMondayWeekend = mondayWeekendView(report, nowProvider());
   const model = reportViewModel(report);
   const reportDate = new Date(`${report.report_date}T00:00:00`);
   const day = Number(report.report_date.slice(-2));
@@ -670,7 +696,6 @@ export function renderReport(root, report, options = {}) {
   const headActions = element('div', { className: 'head-actions' });
   const dateBadge = addText(headActions, 'div', '', 'date');
   dateBadge.setAttribute('title', '北京时间');
-  const nowProvider = options.nowProvider ?? (() => new Date());
   const refreshAvailableAt = options.refreshAvailableAt ?? (nowProvider().getTime() + 600_000);
   const dateFormat = new Intl.DateTimeFormat('en-US', {
     timeZone: 'Asia/Shanghai', month: 'numeric', day: 'numeric',
@@ -750,7 +775,7 @@ export function renderReport(root, report, options = {}) {
   const overview = element('section', { className: 'section', id: 'overview' });
   addSectionHeader(overview, '经营概览', '净销售额口径', '◔');
   const unitGrid = element('div', { className: 'unit-grid' });
-  model.units.forEach((unit) => unitGrid.append(renderUnit(unit, report, day, progress)));
+  model.units.forEach((unit) => unitGrid.append(renderUnit(unit, report, day, progress, showMondayWeekend)));
   overview.append(unitGrid);
   page.append(overview);
 
@@ -759,11 +784,14 @@ export function renderReport(root, report, options = {}) {
   const filters = element('div', { className: 'filters' });
   const brandCard = element('div', { className: 'card table-card' });
   addText(brandCard, 'div', '品牌表现对比', 'table-head');
-  const brandTable = createTable(['排名', '品牌', '当日净销售额', '月累计净销售额', '本周工作日净销售', weekendSalesLabel(report.report_date, report.overall?.weekend_net_sales), '派样销售额', '退货率', '月目标达成率', '目标进度差', '同比', '环比']);
+  const weekendHeaders = showMondayWeekend
+    ? ['周六净销售', '周日净销售', '上周末净销售 TTL']
+    : [weekendSalesLabel(report.report_date, report.overall?.weekend_net_sales)];
+  const brandTable = createTable(['排名', '品牌', '当日净销售额', '月累计净销售额', '本周工作日净销售', ...weekendHeaders, '派样销售额', '退货率', '月目标达成率', '目标进度差', '同比', '环比']);
   brandCard.append(brandTable.wrap);
   const applyFilter = (brand) => {
     const visibleBrands = brand === 'all' ? model.brands : model.brands.filter((item) => item.brand === brand);
-    fillBrandRows(brandTable.body, visibleBrands, progress);
+    fillBrandRows(brandTable.body, visibleBrands, progress, report, showMondayWeekend);
   };
   ['全部品牌', ...model.brands.map((item) => item.brand)].forEach((label, index) => {
     const button = element('button', { text: label, className: `chip${index === 0 ? ' active' : ''}` });
