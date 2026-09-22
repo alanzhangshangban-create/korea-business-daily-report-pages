@@ -1,7 +1,42 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-18T11:25:20+08:00",
+  "generated_at": "2026-09-22T11:05:47+08:00",
   "items": [
+    {
+      "event_id": "pharmaresearch-chicmax-rejuran-china-20260921",
+      "section": "industry",
+      "category": "K-Beauty · 中国本土化",
+      "quality_level": "重点动态",
+      "published_at": "2026-09-21T10:57:09+09:00",
+      "event_occurred_at": "2026-09-21T00:00:00+09:00",
+      "first_disclosed_at": "2026-09-21T00:00:00+09:00",
+      "republished_at": "2026-09-21T19:04:00+08:00",
+      "headline": "PharmaResearch 与上美股份合作推进丽驻兰化妆品中国本土化",
+      "summary": "双方签署战略合作备忘录，拟围绕 REJURAN COSMETICS 在中国的本土化产品开发、品牌运营与供应链开展合作，并计划进一步探讨成立合资公司；具体合作结构与范围预计年内确定。",
+      "why_it_matters": "韩国功效护肤品牌正从跨境成品销售转向与中国头部品牌集团共同做研发、供应链和本土运营。韩国事业部应关注 PDRN 赛道的本土化速度、渠道资源与内容教育方式，评估对同类功效产品竞争和品牌合作模式的影响。",
+      "primary_source": "PharmaResearch 官方新闻稿",
+      "primary_url": "https://www.pharmaresearch.com/en/press/view.html?idx=466",
+      "evidence_has_primary": true,
+      "verification_status": "verified",
+      "korea_related": true,
+      "evidence_sources": [
+        {
+          "name": "PharmaResearch 官方新闻稿",
+          "url": "https://www.pharmaresearch.com/en/press/view.html?idx=466",
+          "kind": "primary"
+        },
+        {
+          "name": "Seoul Economic Daily",
+          "url": "https://en.sedaily.com/finance/2026/09/21/pharmaresearch-ties-up-with-chinas-ccm-to-expand-rejuran",
+          "kind": "independent"
+        },
+        {
+          "name": "妆颜社",
+          "url": "https://www.zhuangyanshe.com/articles/%E4%B8%8A%E7%BE%8E%E8%81%94%E6%89%8B%E9%9F%A9%E5%9B%BDpdrn%E6%8A%A4%E8%82%A4-%E9%BC%BB%E7%A5%96-%E6%8B%9F%E6%88%90%E7%AB%8B%E5%90%88%E8%B5%84%E5%85%AC%E5%8F%B8",
+          "kind": "independent"
+        }
+      ]
+    },
     {
       "event_id": "bioheal-boh-nad-toner-japan-20260916",
       "section": "competitor",
@@ -118,36 +153,6 @@
         {
           "name": "ChosunBiz",
           "url": "https://biz.chosun.com/en/en-retail/2026/09/15/2KKJCBYPFZGQPKCJRVYGN2BH2I/",
-          "kind": "independent"
-        }
-      ]
-    },
-    {
-      "event_id": "coles-kbeauty-national-launch-20260914",
-      "section": "industry",
-      "category": "K-Beauty · 海外渠道",
-      "quality_level": "重点动态",
-      "published_at": "2026-09-14T16:37:00+10:00",
-      "event_occurred_at": "2026-09-14T16:37:00+10:00",
-      "first_disclosed_at": "2026-09-14T16:37:00+10:00",
-      "republished_at": "2026-09-14T00:00:00+10:00",
-      "headline": "澳洲 Coles 全国引入 100 余款护肤品并首次规模化上架 K-Beauty",
-      "summary": "Coles 宣布 9 月在全澳推出 100 余款护肤新品，首次把 K-Beauty 纳入全国性商超护肤货架；Tony Moly 已上线，COSRX 与 Beauty of Joseon 计划 9 月 25 日进店，并获得商超渠道独家安排。",
-      "why_it_matters": "K-Beauty 正从专业美妆和跨境电商进一步进入高频商超渠道。韩国事业部可观察其用明星单品、低决策门槛和渠道独家组合获取大众消费者的方式。",
-      "primary_source": "Coles 官方媒体稿",
-      "primary_url": "https://newshub.medianet.com.au/2026/09/k-beauty-is-landing-at-coles-as-supermarket-skincare-gets-a-glow-up/171275/",
-      "evidence_has_primary": true,
-      "verification_status": "verified",
-      "korea_related": true,
-      "evidence_sources": [
-        {
-          "name": "Coles 官方媒体稿",
-          "url": "https://newshub.medianet.com.au/2026/09/k-beauty-is-landing-at-coles-as-supermarket-skincare-gets-a-glow-up/171275/",
-          "kind": "primary"
-        },
-        {
-          "name": "Newsreel",
-          "url": "https://newsreel.com.au/article/business/k-beauty-powerhouses-launch-at-coles/",
           "kind": "independent"
         }
       ]
