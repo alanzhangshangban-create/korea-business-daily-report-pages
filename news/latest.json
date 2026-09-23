@@ -1,7 +1,94 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-22T11:05:47+08:00",
+  "generated_at": "2026-09-23T11:07:13+08:00",
   "items": [
+    {
+      "event_id": "anthropic-claude-opus-5-5-20260922",
+      "section": "operations_ai",
+      "category": "AI · 模型与经营效率",
+      "quality_level": "重点动态",
+      "published_at": "2026-09-22T12:05:00-07:00",
+      "event_occurred_at": "2026-09-22T00:00:00-07:00",
+      "first_disclosed_at": "2026-09-22T00:00:00-07:00",
+      "headline": "Anthropic 发布 Claude Opus 5.5，主打更低单位成本的长任务执行",
+      "summary": "Anthropic 发布 Claude Opus 5.5，官方称其在多数工作上达到 Fable 5.1 水平，典型工作负载成本较 Opus 5 低约 40%；API 输入、输出价格分别为每百万 token 4 美元和 20 美元。",
+      "why_it_matters": "AI 竞争正从单纯比能力转向比“完成一项真实工作所需的成本与步骤”。日报与情报采集流程可继续用同一套验收集评估更低成本模型，但官方基准仍需与真实业务任务分开验证。",
+      "primary_source": "Anthropic 官方发布",
+      "primary_url": "https://www.anthropic.com/claude-opus-5-5",
+      "evidence_has_primary": true,
+      "verification_status": "verified",
+      "korea_related": false,
+      "evidence_sources": [
+        {
+          "name": "Anthropic 官方发布",
+          "url": "https://www.anthropic.com/claude-opus-5-5",
+          "kind": "primary"
+        },
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/technology/anthropic-releases-claude-opus-5-5-beating-fable-5-1-on-key-agentic-benchmarks-at-60-cheaper-api-price",
+          "kind": "independent"
+        }
+      ]
+    },
+    {
+      "event_id": "microsoft-eviltokens-takedown-20260922",
+      "section": "operations_ai",
+      "category": "AI · 企业安全",
+      "quality_level": "重点动态",
+      "published_at": "2026-09-22T15:45:00-07:00",
+      "event_occurred_at": "2026-09-22T00:00:00-07:00",
+      "first_disclosed_at": "2026-09-22T00:00:00-07:00",
+      "headline": "微软联合伙伴打击 AI 辅助钓鱼平台 EvilTokens",
+      "summary": "微软披露 EvilTokens 利用 AI 生成定向钓鱼话术并分析受侵邮箱，相关活动影响逾 1.2 万个邮箱、涉及 1 万多家机构；微软与合作方通过法律和技术行动处置了相关基础设施。",
+      "why_it_matters": "AI 已在降低定向诈骗的制作门槛。日报自动化涉及浏览器登录态、飞书和发布账号，应继续坚持不把 Cookie、个人密码或令牌写进页面、仓库或日志，并对授权范围和异常登录做最小化控制。",
+      "primary_source": "Microsoft Security 官方研究",
+      "primary_url": "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/",
+      "evidence_has_primary": true,
+      "verification_status": "verified",
+      "korea_related": false,
+      "evidence_sources": [
+        {
+          "name": "Microsoft Security 官方研究",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/",
+          "kind": "primary"
+        },
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000/",
+          "kind": "independent"
+        }
+      ]
+    },
+    {
+      "event_id": "sulwhasoo-ginseng-cream-60-popup-20260922",
+      "section": "industry",
+      "category": "K-Beauty · 品牌体验",
+      "quality_level": "重点动态",
+      "published_at": "2026-09-22T10:01:00+09:00",
+      "event_occurred_at": "2026-09-21T00:00:00+09:00",
+      "first_disclosed_at": "2026-09-22T00:00:00+09:00",
+      "headline": "雪花秀以 60 周年快闪强化人参科研与抗老产品心智",
+      "summary": "雪花秀从 9 月 21 日起在新世界百货江南店举办润燥生/人参面霜 60 周年主题快闪，设置沉浸式影像、互动体验、定制咨询与购买礼遇，并计划向韩国多地百货继续巡展。",
+      "why_it_matters": "这是以长期成分科研资产承接线下体验、咨询和转化的典型打法。韩国事业部可借鉴其把品牌历史、功效教育和百货渠道成交串成同一条体验路径，而不是只做新品促销。",
+      "primary_source": "Amorepacific 官方新闻稿",
+      "primary_url": "https://www.apgroup.com/int/ko/news/2026-09-22-1.html",
+      "evidence_has_primary": true,
+      "verification_status": "verified",
+      "korea_related": true,
+      "evidence_sources": [
+        {
+          "name": "Amorepacific 官方新闻稿",
+          "url": "https://www.apgroup.com/int/ko/news/2026-09-22-1.html",
+          "kind": "primary"
+        },
+        {
+          "name": "News1 韩国",
+          "url": "https://www.news1.kr/industry/distribution/6298491",
+          "kind": "independent"
+        }
+      ]
+    },
     {
       "event_id": "pharmaresearch-chicmax-rejuran-china-20260921",
       "section": "industry",
@@ -38,6 +125,41 @@
       ]
     },
     {
+      "event_id": "amorepacific-coch-hair-peptide-20260921",
+      "section": "industry",
+      "category": "K-Beauty · 功效科研",
+      "quality_level": "重点动态",
+      "published_at": "2026-09-22T00:00:00+08:00",
+      "event_occurred_at": "2026-09-21T00:00:00+09:00",
+      "first_disclosed_at": "2026-09-21T00:00:00+09:00",
+      "republished_at": "2026-09-22T00:00:00+08:00",
+      "headline": "爱茉莉太平洋披露 COCH 与新生发丝强韧度研究",
+      "summary": "爱茉莉太平洋披露毛囊 COCH 表达与发丝二硫键和抗拉强度的关联，相关研究发表于 Experimental Dermatology，并已将相关肽技术用于吕 Rootgen 系列。",
+      "why_it_matters": "K-Beauty 正把成分科研从护肤延伸到头皮与毛发长寿，并用论文、原料命名和产品落地形成证据链；适合作为功效内容表达的参考。",
+      "primary_source": "Amorepacific 中国官方发布",
+      "primary_url": "https://stories.amorepacific.com/zh/amorepacific-%E7%88%B1%E8%8C%89%E8%8E%89%E5%A4%AA%E5%B9%B3%E6%B4%8B%E5%8F%91%E7%8E%B0%E6%BB%8B%E5%85%BB%E6%AF%9B%E5%9B%8A%E7%B2%97%E5%A3%AE%E6%96%B0%E7%94%9F%E5%8F%91%E4%B8%9D%E7%9A%84%E6%96%B0/",
+      "evidence_has_primary": true,
+      "verification_status": "verified",
+      "korea_related": true,
+      "evidence_sources": [
+        {
+          "name": "Amorepacific 中国官方发布",
+          "url": "https://stories.amorepacific.com/zh/amorepacific-%E7%88%B1%E8%8C%89%E8%8E%89%E5%A4%AA%E5%B9%B3%E6%B4%8B%E5%8F%91%E7%8E%B0%E6%BB%8B%E5%85%BB%E6%AF%9B%E5%9B%8A%E7%B2%97%E5%A3%AE%E6%96%B0%E7%94%9F%E5%8F%91%E4%B8%9D%E7%9A%84%E6%96%B0/",
+          "kind": "primary"
+        },
+        {
+          "name": "Experimental Dermatology 论文",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1111/exd.70348",
+          "kind": "independent"
+        },
+        {
+          "name": "The K Beauty Science",
+          "url": "https://www.thekbs.co.kr/",
+          "kind": "independent"
+        }
+      ]
+    },
+    {
       "event_id": "bioheal-boh-nad-toner-japan-20260916",
       "section": "competitor",
       "category": "竞品 · BIOHEAL BOH",
@@ -63,131 +185,6 @@
         {
           "name": "Dellows News",
           "url": "https://news.dellows.jp/319400/",
-          "kind": "independent"
-        }
-      ]
-    },
-    {
-      "event_id": "bioheal-boh-atcosme-popup-20260909",
-      "section": "competitor",
-      "category": "竞品 · BIOHEAL BOH",
-      "quality_level": "重点动态",
-      "published_at": "2026-09-09T09:00:00+09:00",
-      "event_occurred_at": "2026-09-16T00:00:00+09:00",
-      "first_disclosed_at": "2026-09-09T09:00:00+09:00",
-      "republished_at": "2026-09-10T10:00:00+09:00",
-      "headline": "BIOHEAL BOH 将在东京与大阪同步开设一周体验型快闪店",
-      "summary": "活动定于 9 月 16—22 日举行，主推三类功效面霜及新品，并通过试用、到店游戏、关注官方账号和分档满赠组合拉新与转化。",
-      "why_it_matters": "这是把功效教育、现场体验、社媒关注和购买激励串成一条链路的线下种草案例，可用于复盘韩国品牌在日本市场的新品教育与会员沉淀方式。",
-      "primary_source": "CJ Olive Young Japan 官方发布",
-      "primary_url": "https://prtimes.jp/main/html/rd/p/000000055.000148369.html",
-      "evidence_has_primary": true,
-      "verification_status": "verified",
-      "korea_related": true,
-      "evidence_sources": [
-        {
-          "name": "CJ Olive Young Japan 官方发布",
-          "url": "https://prtimes.jp/main/html/rd/p/000000055.000148369.html",
-          "kind": "primary"
-        },
-        {
-          "name": "@cosme OSAKA 官方博客",
-          "url": "https://www.cosme.net/beautist/article/2711417",
-          "kind": "independent"
-        }
-      ]
-    },
-    {
-      "event_id": "china-cosmetics-retail-august-20260915",
-      "section": "industry",
-      "category": "中国市场 · 美妆零售",
-      "quality_level": "重点动态",
-      "published_at": "2026-09-15T10:00:00+08:00",
-      "event_occurred_at": "2026-09-15T10:00:00+08:00",
-      "first_disclosed_at": "2026-09-15T10:00:00+08:00",
-      "republished_at": "2026-09-15T00:00:00+00:00",
-      "headline": "国家统计局：8 月化妆品零售额同比增长 4.9%",
-      "summary": "限额以上单位化妆品类 8 月零售额为 368 亿元，同比增长 4.9%；1—8 月累计 3,094 亿元，同比增长 6.1%。同期全国网上商品零售额同比增长 4.3%。",
-      "why_it_matters": "化妆品累计增速继续高于社零大盘，但线上商品增速并不等同于单品牌增长。韩国事业部应把大盘修复作为背景变量，仍以品牌净销售、渠道结构和投放效率判断经营质量。",
-      "primary_source": "中国国家统计局",
-      "primary_url": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965311.html",
-      "evidence_has_primary": true,
-      "verification_status": "verified",
-      "korea_related": false,
-      "evidence_sources": [
-        {
-          "name": "中国国家统计局",
-          "url": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965311.html",
-          "kind": "primary"
-        },
-        {
-          "name": "Trading Economics",
-          "url": "https://zh.tradingeconomics.com/china/retail-sales-annual",
-          "kind": "independent"
-        }
-      ]
-    },
-    {
-      "event_id": "oliveyoung-mobile-skinscan-20260915",
-      "section": "industry",
-      "category": "K-Beauty · 零售数字化",
-      "quality_level": "重点动态",
-      "published_at": "2026-09-15T09:00:00+08:00",
-      "event_occurred_at": "2026-09-15T09:00:00+08:00",
-      "first_disclosed_at": "2026-09-15T09:00:00+08:00",
-      "republished_at": "2026-09-15T09:52:00+08:00",
-      "headline": "Olive Young 将 AI 皮肤诊断扩展到手机端",
-      "summary": "Olive Young 把门店 Skin Scan 服务接入手机端，消费者可上传或拍摄面部照片，由 AI 分析肤质、毛孔、色素、水油与皱纹，并获得成分、商品和护理流程建议。",
-      "why_it_matters": "韩国头部美妆零售商正在把门店体验转成可反复使用的线上诊断与商品推荐入口。韩国事业部可关注其以诊断结果连接复购提醒、个性化选品和线上线下一体化运营的方式。",
-      "primary_source": "CJ Newsroom",
-      "primary_url": "https://cjnews.cj.net/%EB%A7%A4%EC%9E%A5-%EB%B0%96%EC%9C%BC%EB%A1%9C-%EB%82%98%EC%98%A8-%EC%B2%B4%ED%97%98%ED%98%95-%EB%B7%B0%ED%8B%B0cj%EC%98%AC%EB%A6%AC%EB%B8%8C%EC%98%81-%EB%AA%A8%EB%B0%94/",
-      "evidence_has_primary": true,
-      "verification_status": "verified",
-      "korea_related": true,
-      "evidence_sources": [
-        {
-          "name": "CJ Newsroom",
-          "url": "https://cjnews.cj.net/%EB%A7%A4%EC%9E%A5-%EB%B0%96%EC%9C%BC%EB%A1%9C-%EB%82%98%EC%98%A8-%EC%B2%B4%ED%97%98%ED%98%95-%EB%B7%B0%ED%8B%B0cj%EC%98%AC%EB%A6%AC%EB%B8%8C%EC%98%81-%EB%AA%A8%EB%B0%94/",
-          "kind": "primary"
-        },
-        {
-          "name": "ChosunBiz",
-          "url": "https://biz.chosun.com/en/en-retail/2026/09/15/2KKJCBYPFZGQPKCJRVYGN2BH2I/",
-          "kind": "independent"
-        }
-      ]
-    },
-    {
-      "event_id": "torriden-dive-in-japan-launch-20260914",
-      "section": "competitor",
-      "category": "竞品 · Torriden / 桃瑞丹",
-      "quality_level": "重点动态",
-      "published_at": "2026-08-19T16:30:00+09:00",
-      "event_occurred_at": "2026-09-14T00:00:00+09:00",
-      "first_disclosed_at": "2026-08-19T16:30:00+09:00",
-      "republished_at": "2026-09-14T00:00:00+09:00",
-      "headline": "Torriden Dive-In 升级系列于日本正式开售",
-      "summary": "Torriden 的 Dive-In 系列于 9 月 14 日在日本全国药妆店及美妆集合店陆续开售，覆盖精华、爽肤水、肌底水、舒缓面霜、面膜和面霜六个单品；升级重点包括增加低分子透明质酸用量并加入依克多因。",
-      "why_it_matters": "桃瑞丹正用核心补水系列的成分升级与线下全渠道铺货强化日本市场心智。韩国事业部可重点观察其“明星成分升级＋全系列同步焕新＋集合店首发”的新品教育节奏，以及是否向中国跨境渠道复制。",
-      "primary_source": "Torriden 日本经销方 Astena Holdings 官方发布",
-      "primary_url": "https://prtimes.jp/main/html/rd/p/000000583.000085143.html",
-      "evidence_has_primary": true,
-      "verification_status": "verified",
-      "korea_related": true,
-      "evidence_sources": [
-        {
-          "name": "Astena Holdings / Maruman H&B 官方发布",
-          "url": "https://prtimes.jp/main/html/rd/p/000000583.000085143.html",
-          "kind": "primary"
-        },
-        {
-          "name": "@cosme 新品数据库",
-          "url": "https://www.cosme.net/calendar/index/year/2026/month/09/day/14/brand_id/120757",
-          "kind": "independent"
-        },
-        {
-          "name": "集英社 MAQUIA 新品日历",
-          "url": "https://maquia.hpplus.jp/cosme/calendar/?date=2026-9-14",
           "kind": "independent"
         }
       ]
