@@ -1,7 +1,37 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-23T11:07:13+08:00",
+  "generated_at": "2026-09-24T11:39:06+08:00",
   "items": [
+    {
+      "event_id": "revieve-beautycatalyst-announcement-20260923",
+      "section": "operations_ai",
+      "category": "美妆科技 · AI运营",
+      "quality_level": "常规更新",
+      "published_at": "2026-09-23",
+      "event_occurred_at": "2026-09-23",
+      "first_disclosed_at": "2026-09-23",
+      "republished_at": null,
+      "headline": "Revieve 发布 BeautyCatalyst，连接美妆消费者互动与经营分析",
+      "summary": "Revieve 于9月23日发布平台公告，将产品与成分知识、消费者互动、受众及市场分析连接起来，用于支持营销、选品和产品开发；目前核实的是发布事实，不代表实际经营效果已获验证。",
+      "why_it_matters": "运营启示：可关注如何统一产品、成分和肤质标签，将消费者咨询与反馈用于内容选题和选品。是否提升转化仍需独立验证，不能把供应商宣传当作已实现收益。",
+      "primary_source": "Revieve 官方公告",
+      "primary_url": "https://www.revieve.com/insider/news/revieve-beautycatalyst-beauty-commerce-intelligence-agentic-ai",
+      "evidence_has_primary": true,
+      "verification_status": "verified",
+      "korea_related": false,
+      "evidence_sources": [
+        {
+          "name": "Revieve 官方公告",
+          "url": "https://www.revieve.com/insider/news/revieve-beautycatalyst-beauty-commerce-intelligence-agentic-ai",
+          "kind": "primary"
+        },
+        {
+          "name": "TheIndustry.beauty · Camilla Rydzek",
+          "url": "https://theindustry.beauty/revieve-launches-beautycatalyst-commerce-intelligence/",
+          "kind": "independent"
+        }
+      ]
+    },
     {
       "event_id": "anthropic-claude-opus-5-5-20260922",
       "section": "operations_ai",
@@ -155,36 +185,6 @@
         {
           "name": "The K Beauty Science",
           "url": "https://www.thekbs.co.kr/",
-          "kind": "independent"
-        }
-      ]
-    },
-    {
-      "event_id": "bioheal-boh-nad-toner-japan-20260916",
-      "section": "competitor",
-      "category": "竞品 · BIOHEAL BOH",
-      "quality_level": "重点动态",
-      "published_at": "2026-09-15T10:00:00+09:00",
-      "event_occurred_at": "2026-09-16T00:00:00+09:00",
-      "first_disclosed_at": "2026-09-15T10:00:00+09:00",
-      "republished_at": "2026-09-15T11:08:50+09:00",
-      "headline": "BIOHEAL BOH 在日本上市 NAD 双层精华水",
-      "summary": "新品于 9 月 16 日开售，采用 95% 水相与 5% 油相的双层配方，150mL 定价 2,200 日元；产品沟通同时覆盖 NAD、PDRN、谷胱甘肽、视黄醇与透明质酸。",
-      "why_it_matters": "竞品正把成分故事、剂型差异和多功效诉求集中到一个入门水类单品中。韩国事业部可关注其在日本市场如何用“成分组合＋可视化双层剂型”降低新品教育成本。",
-      "primary_source": "CJ Olive Young Japan 官方发布",
-      "primary_url": "https://prtimes.jp/main/html/rd/p/000000056.000148369.html",
-      "evidence_has_primary": true,
-      "verification_status": "verified",
-      "korea_related": true,
-      "evidence_sources": [
-        {
-          "name": "CJ Olive Young Japan 官方发布",
-          "url": "https://prtimes.jp/main/html/rd/p/000000056.000148369.html",
-          "kind": "primary"
-        },
-        {
-          "name": "Dellows News",
-          "url": "https://news.dellows.jp/319400/",
           "kind": "independent"
         }
       ]
