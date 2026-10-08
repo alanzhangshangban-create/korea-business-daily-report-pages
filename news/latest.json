@@ -4,7 +4,7 @@
   "items": [
     {
       "event_id": "korea-kbrand-authentication-launch-20261007",
-      "section": "featured",
+      "section": "industry",
       "domain": "beauty",
       "category": "K-Beauty · 跨境品牌保护",
       "quality_level": "重点动态",
@@ -28,7 +28,7 @@
     },
     {
       "event_id": "pinterest-beauty-trend-report-20261006",
-      "section": "beauty",
+      "section": "industry",
       "domain": "beauty",
       "category": "美妆行业 · 内容趋势",
       "quality_level": "常规更新",
@@ -52,7 +52,7 @@
     },
     {
       "event_id": "mary-kay-kbeauty-texture-edit-20261005",
-      "section": "beauty",
+      "section": "industry",
       "domain": "beauty",
       "category": "K-Beauty · 全球渠道",
       "quality_level": "常规更新",
@@ -76,7 +76,7 @@
     },
     {
       "event_id": "openai-gpt6-intelligent-ui-20261007",
-      "section": "ai",
+      "section": "operations_ai",
       "domain": "ai",
       "category": "AI · 内容与交互",
       "quality_level": "重点动态",
@@ -100,7 +100,7 @@
     },
     {
       "event_id": "anthropic-claude-haiku-5-5-20261007",
-      "section": "ai",
+      "section": "operations_ai",
       "domain": "ai",
       "category": "AI · 自动化成本",
       "quality_level": "常规更新",
