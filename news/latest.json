@@ -1,192 +1,125 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-24T11:39:06+08:00",
+  "generated_at": "2026-10-08T10:34:00+08:00",
   "items": [
     {
-      "event_id": "revieve-beautycatalyst-announcement-20260923",
-      "section": "operations_ai",
-      "category": "美妆科技 · AI运营",
-      "quality_level": "常规更新",
-      "published_at": "2026-09-23",
-      "event_occurred_at": "2026-09-23",
-      "first_disclosed_at": "2026-09-23",
+      "event_id": "korea-kbrand-authentication-launch-20261007",
+      "section": "featured",
+      "domain": "beauty",
+      "category": "K-Beauty · 跨境品牌保护",
+      "quality_level": "重点动态",
+      "published_at": "2026-10-07",
+      "event_occurred_at": "2026-10-07",
+      "first_disclosed_at": "2026-10-07",
       "republished_at": null,
-      "headline": "Revieve 发布 BeautyCatalyst，连接美妆消费者互动与经营分析",
-      "summary": "Revieve 于9月23日发布平台公告，将产品与成分知识、消费者互动、受众及市场分析连接起来，用于支持营销、选品和产品开发；目前核实的是发布事实，不代表实际经营效果已获验证。",
-      "why_it_matters": "运营启示：可关注如何统一产品、成分和肤质标签，将消费者咨询与反馈用于内容选题和选品。是否提升转化仍需独立验证，不能把供应商宣传当作已实现收益。",
-      "primary_source": "Revieve 官方公告",
-      "primary_url": "https://www.revieve.com/insider/news/revieve-beautycatalyst-beauty-commerce-intelligence-agentic-ai",
+      "headline": "韩国启动 K-Brand 政府认证，强化海外正品识别",
+      "summary": "韩国知识产权部门宣布，10月7日起实施 K-Brand 政府认证制度，参与企业可使用政府认证标识和正品识别技术；首轮已有包括爱茉莉太平洋在内的 31 家企业申请参与。制度启动不代表所有韩国美妆商品均已获得认证。",
+      "why_it_matters": "跨境店铺需留意竞品正品认证标识、平台打假和商品详情页的正品证明方式；对未获认证的品牌不能宣称已获政府背书。",
+      "primary_source": "韩国知识产权部门公告",
+      "primary_url": "https://www.kipo.go.kr/ko/kpoBultnDetail.do?aprchId=BUT0000029&menuCd=SCD0200618&ntatcSeq=21074&sysCd=SCD02",
+      "independent_source_count": 1,
+      "evidence_has_primary": true,
+      "verification_status": "verified",
+      "korea_related": true,
+      "evidence_sources": [
+        {"name": "韩国知识产权部门公告", "url": "https://www.kipo.go.kr/ko/kpoBultnDetail.do?aprchId=BUT0000029&menuCd=SCD0200618&ntatcSeq=21074&sysCd=SCD02", "kind": "primary"},
+        {"name": "AFP 经 CNA 报道", "url": "https://www.channelnewsasia.com/east-asia/south-korea-new-brand-scheme-counterfeits-6438536", "kind": "independent"}
+      ]
+    },
+    {
+      "event_id": "pinterest-beauty-trend-report-20261006",
+      "section": "beauty",
+      "domain": "beauty",
+      "category": "美妆行业 · 内容趋势",
+      "quality_level": "常规更新",
+      "published_at": "2026-10-06",
+      "event_occurred_at": "2026-10-06",
+      "first_disclosed_at": "2026-10-06",
+      "republished_at": null,
+      "headline": "Pinterest 首份美妆趋势报告聚焦细分妆容与个性化搜索",
+      "summary": "Pinterest 10月6日发布首份美妆趋势报告，显示用户正搜索更具体的美甲、发色和妆效组合，例如猫眼美甲、樱桃可乐发色和云感底妆。搜索趋势仅反映该平台样本，不等同于中国市场成交趋势。",
+      "why_it_matters": "种草选题可从泛化功效词转向可被检索的颜色、质地与场景组合，但需用抖音、小红书和天猫本地数据验证需求后再投入。",
+      "primary_source": "Pinterest 官方报告",
+      "primary_url": "https://newsroom.pinterest.com/en-sg/news/beauty-trend-report-2026/",
+      "independent_source_count": 1,
       "evidence_has_primary": true,
       "verification_status": "verified",
       "korea_related": false,
       "evidence_sources": [
-        {
-          "name": "Revieve 官方公告",
-          "url": "https://www.revieve.com/insider/news/revieve-beautycatalyst-beauty-commerce-intelligence-agentic-ai",
-          "kind": "primary"
-        },
-        {
-          "name": "TheIndustry.beauty · Camilla Rydzek",
-          "url": "https://theindustry.beauty/revieve-launches-beautycatalyst-commerce-intelligence/",
-          "kind": "independent"
-        }
+        {"name": "Pinterest 官方报告", "url": "https://newsroom.pinterest.com/en-sg/news/beauty-trend-report-2026/", "kind": "primary"},
+        {"name": "TheIndustry.beauty", "url": "https://theindustry.beauty/cherry-cola-hair-cafe-nails-and-cloud-skin-pinterest-predicts-autumns-biggest-beauty-trends/", "kind": "independent"}
       ]
     },
     {
-      "event_id": "anthropic-claude-opus-5-5-20260922",
-      "section": "operations_ai",
-      "category": "AI · 模型与经营效率",
+      "event_id": "mary-kay-kbeauty-texture-edit-20261005",
+      "section": "beauty",
+      "domain": "beauty",
+      "category": "K-Beauty · 全球渠道",
+      "quality_level": "常规更新",
+      "published_at": "2026-10-05",
+      "event_occurred_at": "2026-10-05",
+      "first_disclosed_at": "2026-10-05",
+      "republished_at": "2026-10-07",
+      "headline": "Mary Kay 推出韩国制造护肤限定系列，覆盖 40 个市场",
+      "summary": "Mary Kay 10月5日发布 K-Beauty Texture Edit 限定系列，包含卸妆膏、蜗牛凝胶眼贴和胶原保湿凝胶，称其在 40 个市场销售；10月7日行业媒体继续报道。40 市场为品牌公布的覆盖范围，非独立核实的实际销量。",
+      "why_it_matters": "国际品牌正在以韩国制造和 PDRN、蜗牛黏液等成分组合切入 K-Beauty 需求。韩国事业部可关注同类功效产品的竞争定位和跨市场商品表达。",
+      "primary_source": "Mary Kay 官方公告",
+      "primary_url": "https://newsroom.marykay.com/media/mary-kay-introduces-the-k-beauty-texture-edit/",
+      "independent_source_count": 1,
+      "evidence_has_primary": true,
+      "verification_status": "verified",
+      "korea_related": true,
+      "evidence_sources": [
+        {"name": "Mary Kay 官方公告", "url": "https://newsroom.marykay.com/media/mary-kay-introduces-the-k-beauty-texture-edit/", "kind": "primary"},
+        {"name": "CEW 美妆行业编辑报道", "url": "https://cew.org/beauty_news/beautys-top-headlines-october-7-2026/", "kind": "independent"}
+      ]
+    },
+    {
+      "event_id": "openai-gpt6-intelligent-ui-20261007",
+      "section": "ai",
+      "domain": "ai",
+      "category": "AI · 内容与交互",
       "quality_level": "重点动态",
-      "published_at": "2026-09-22T12:05:00-07:00",
-      "event_occurred_at": "2026-09-22T00:00:00-07:00",
-      "first_disclosed_at": "2026-09-22T00:00:00-07:00",
-      "headline": "Anthropic 发布 Claude Opus 5.5，主打更低单位成本的长任务执行",
-      "summary": "Anthropic 发布 Claude Opus 5.5，官方称其在多数工作上达到 Fable 5.1 水平，典型工作负载成本较 Opus 5 低约 40%；API 输入、输出价格分别为每百万 token 4 美元和 20 美元。",
-      "why_it_matters": "AI 竞争正从单纯比能力转向比“完成一项真实工作所需的成本与步骤”。日报与情报采集流程可继续用同一套验收集评估更低成本模型，但官方基准仍需与真实业务任务分开验证。",
+      "published_at": "2026-10-07",
+      "event_occurred_at": "2026-10-07",
+      "first_disclosed_at": "2026-10-07",
+      "republished_at": null,
+      "headline": "OpenAI 将 GPT-6 与可交互界面逐步推向 ChatGPT 用户",
+      "summary": "OpenAI 10月7日宣布向 ChatGPT 用户逐步推出 GPT-6 和 Intelligent UI，可在回答中呈现可操作的图表、按钮与工具；该更新是 ChatGPT 体验，不代表韩国事业部日报已接入。",
+      "why_it_matters": "运营分析呈现方式可从纯文字转向可检验、可交互的解释，但日报仍应以已验证的销售数据为准，不把模型生成内容当作事实来源。",
+      "primary_source": "OpenAI 官方公告",
+      "primary_url": "https://openai.com/index/gpt-6-for-everyone/",
+      "independent_source_count": 1,
+      "evidence_has_primary": true,
+      "verification_status": "verified",
+      "korea_related": false,
+      "evidence_sources": [
+        {"name": "OpenAI 官方公告", "url": "https://openai.com/index/gpt-6-for-everyone/", "kind": "primary"},
+        {"name": "TechCrunch 独立报道", "url": "https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/", "kind": "independent"}
+      ]
+    },
+    {
+      "event_id": "anthropic-claude-haiku-5-5-20261007",
+      "section": "ai",
+      "domain": "ai",
+      "category": "AI · 自动化成本",
+      "quality_level": "常规更新",
+      "published_at": "2026-10-07",
+      "event_occurred_at": "2026-10-07",
+      "first_disclosed_at": "2026-10-07",
+      "republished_at": null,
+      "headline": "Anthropic 发布 Claude Haiku 5.5，主打高频低成本任务",
+      "summary": "Anthropic 10月7日发布 Haiku 5.5，官方定位于摘要、分类、数据库查询等高频任务，并同步降低 Sonnet 5.5 缓存读取价格；成本与效果仍需在真实工作流中测试。",
+      "why_it_matters": "新闻初筛和常规分类可评估低成本模型，但销售口径核对、证据交叉检验与最终发布仍需独立校验。",
       "primary_source": "Anthropic 官方发布",
-      "primary_url": "https://www.anthropic.com/claude-opus-5-5",
+      "primary_url": "https://www.anthropic.com/claude-haiku-5-5",
+      "independent_source_count": 1,
       "evidence_has_primary": true,
       "verification_status": "verified",
       "korea_related": false,
       "evidence_sources": [
-        {
-          "name": "Anthropic 官方发布",
-          "url": "https://www.anthropic.com/claude-opus-5-5",
-          "kind": "primary"
-        },
-        {
-          "name": "VentureBeat",
-          "url": "https://venturebeat.com/technology/anthropic-releases-claude-opus-5-5-beating-fable-5-1-on-key-agentic-benchmarks-at-60-cheaper-api-price",
-          "kind": "independent"
-        }
-      ]
-    },
-    {
-      "event_id": "microsoft-eviltokens-takedown-20260922",
-      "section": "operations_ai",
-      "category": "AI · 企业安全",
-      "quality_level": "重点动态",
-      "published_at": "2026-09-22T15:45:00-07:00",
-      "event_occurred_at": "2026-09-22T00:00:00-07:00",
-      "first_disclosed_at": "2026-09-22T00:00:00-07:00",
-      "headline": "微软联合伙伴打击 AI 辅助钓鱼平台 EvilTokens",
-      "summary": "微软披露 EvilTokens 利用 AI 生成定向钓鱼话术并分析受侵邮箱，相关活动影响逾 1.2 万个邮箱、涉及 1 万多家机构；微软与合作方通过法律和技术行动处置了相关基础设施。",
-      "why_it_matters": "AI 已在降低定向诈骗的制作门槛。日报自动化涉及浏览器登录态、飞书和发布账号，应继续坚持不把 Cookie、个人密码或令牌写进页面、仓库或日志，并对授权范围和异常登录做最小化控制。",
-      "primary_source": "Microsoft Security 官方研究",
-      "primary_url": "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/",
-      "evidence_has_primary": true,
-      "verification_status": "verified",
-      "korea_related": false,
-      "evidence_sources": [
-        {
-          "name": "Microsoft Security 官方研究",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/",
-          "kind": "primary"
-        },
-        {
-          "name": "Ars Technica",
-          "url": "https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000/",
-          "kind": "independent"
-        }
-      ]
-    },
-    {
-      "event_id": "sulwhasoo-ginseng-cream-60-popup-20260922",
-      "section": "industry",
-      "category": "K-Beauty · 品牌体验",
-      "quality_level": "重点动态",
-      "published_at": "2026-09-22T10:01:00+09:00",
-      "event_occurred_at": "2026-09-21T00:00:00+09:00",
-      "first_disclosed_at": "2026-09-22T00:00:00+09:00",
-      "headline": "雪花秀以 60 周年快闪强化人参科研与抗老产品心智",
-      "summary": "雪花秀从 9 月 21 日起在新世界百货江南店举办润燥生/人参面霜 60 周年主题快闪，设置沉浸式影像、互动体验、定制咨询与购买礼遇，并计划向韩国多地百货继续巡展。",
-      "why_it_matters": "这是以长期成分科研资产承接线下体验、咨询和转化的典型打法。韩国事业部可借鉴其把品牌历史、功效教育和百货渠道成交串成同一条体验路径，而不是只做新品促销。",
-      "primary_source": "Amorepacific 官方新闻稿",
-      "primary_url": "https://www.apgroup.com/int/ko/news/2026-09-22-1.html",
-      "evidence_has_primary": true,
-      "verification_status": "verified",
-      "korea_related": true,
-      "evidence_sources": [
-        {
-          "name": "Amorepacific 官方新闻稿",
-          "url": "https://www.apgroup.com/int/ko/news/2026-09-22-1.html",
-          "kind": "primary"
-        },
-        {
-          "name": "News1 韩国",
-          "url": "https://www.news1.kr/industry/distribution/6298491",
-          "kind": "independent"
-        }
-      ]
-    },
-    {
-      "event_id": "pharmaresearch-chicmax-rejuran-china-20260921",
-      "section": "industry",
-      "category": "K-Beauty · 中国本土化",
-      "quality_level": "重点动态",
-      "published_at": "2026-09-21T10:57:09+09:00",
-      "event_occurred_at": "2026-09-21T00:00:00+09:00",
-      "first_disclosed_at": "2026-09-21T00:00:00+09:00",
-      "republished_at": "2026-09-21T19:04:00+08:00",
-      "headline": "PharmaResearch 与上美股份合作推进丽驻兰化妆品中国本土化",
-      "summary": "双方签署战略合作备忘录，拟围绕 REJURAN COSMETICS 在中国的本土化产品开发、品牌运营与供应链开展合作，并计划进一步探讨成立合资公司；具体合作结构与范围预计年内确定。",
-      "why_it_matters": "韩国功效护肤品牌正从跨境成品销售转向与中国头部品牌集团共同做研发、供应链和本土运营。韩国事业部应关注 PDRN 赛道的本土化速度、渠道资源与内容教育方式，评估对同类功效产品竞争和品牌合作模式的影响。",
-      "primary_source": "PharmaResearch 官方新闻稿",
-      "primary_url": "https://www.pharmaresearch.com/en/press/view.html?idx=466",
-      "evidence_has_primary": true,
-      "verification_status": "verified",
-      "korea_related": true,
-      "evidence_sources": [
-        {
-          "name": "PharmaResearch 官方新闻稿",
-          "url": "https://www.pharmaresearch.com/en/press/view.html?idx=466",
-          "kind": "primary"
-        },
-        {
-          "name": "Seoul Economic Daily",
-          "url": "https://en.sedaily.com/finance/2026/09/21/pharmaresearch-ties-up-with-chinas-ccm-to-expand-rejuran",
-          "kind": "independent"
-        },
-        {
-          "name": "妆颜社",
-          "url": "https://www.zhuangyanshe.com/articles/%E4%B8%8A%E7%BE%8E%E8%81%94%E6%89%8B%E9%9F%A9%E5%9B%BDpdrn%E6%8A%A4%E8%82%A4-%E9%BC%BB%E7%A5%96-%E6%8B%9F%E6%88%90%E7%AB%8B%E5%90%88%E8%B5%84%E5%85%AC%E5%8F%B8",
-          "kind": "independent"
-        }
-      ]
-    },
-    {
-      "event_id": "amorepacific-coch-hair-peptide-20260921",
-      "section": "industry",
-      "category": "K-Beauty · 功效科研",
-      "quality_level": "重点动态",
-      "published_at": "2026-09-22T00:00:00+08:00",
-      "event_occurred_at": "2026-09-21T00:00:00+09:00",
-      "first_disclosed_at": "2026-09-21T00:00:00+09:00",
-      "republished_at": "2026-09-22T00:00:00+08:00",
-      "headline": "爱茉莉太平洋披露 COCH 与新生发丝强韧度研究",
-      "summary": "爱茉莉太平洋披露毛囊 COCH 表达与发丝二硫键和抗拉强度的关联，相关研究发表于 Experimental Dermatology，并已将相关肽技术用于吕 Rootgen 系列。",
-      "why_it_matters": "K-Beauty 正把成分科研从护肤延伸到头皮与毛发长寿，并用论文、原料命名和产品落地形成证据链；适合作为功效内容表达的参考。",
-      "primary_source": "Amorepacific 中国官方发布",
-      "primary_url": "https://stories.amorepacific.com/zh/amorepacific-%E7%88%B1%E8%8C%89%E8%8E%89%E5%A4%AA%E5%B9%B3%E6%B4%8B%E5%8F%91%E7%8E%B0%E6%BB%8B%E5%85%BB%E6%AF%9B%E5%9B%8A%E7%B2%97%E5%A3%AE%E6%96%B0%E7%94%9F%E5%8F%91%E4%B8%9D%E7%9A%84%E6%96%B0/",
-      "evidence_has_primary": true,
-      "verification_status": "verified",
-      "korea_related": true,
-      "evidence_sources": [
-        {
-          "name": "Amorepacific 中国官方发布",
-          "url": "https://stories.amorepacific.com/zh/amorepacific-%E7%88%B1%E8%8C%89%E8%8E%89%E5%A4%AA%E5%B9%B3%E6%B4%8B%E5%8F%91%E7%8E%B0%E6%BB%8B%E5%85%BB%E6%AF%9B%E5%9B%8A%E7%B2%97%E5%A3%AE%E6%96%B0%E7%94%9F%E5%8F%91%E4%B8%9D%E7%9A%84%E6%96%B0/",
-          "kind": "primary"
-        },
-        {
-          "name": "Experimental Dermatology 论文",
-          "url": "https://onlinelibrary.wiley.com/doi/10.1111/exd.70348",
-          "kind": "independent"
-        },
-        {
-          "name": "The K Beauty Science",
-          "url": "https://www.thekbs.co.kr/",
-          "kind": "independent"
-        }
+        {"name": "Anthropic 官方发布", "url": "https://www.anthropic.com/claude-haiku-5-5", "kind": "primary"},
+        {"name": "SiliconANGLE 独立报道", "url": "https://siliconangle.com/2026/10/07/anthropic-releases-claude-haiku-5-5-small-model-and-halves-sonnet-5-5-cache-read-prices/", "kind": "independent"}
       ]
     }
   ]
