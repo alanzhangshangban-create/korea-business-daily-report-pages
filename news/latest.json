@@ -1,7 +1,44 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-08T10:34:00+08:00",
+  "generated_at": "2026-10-23T10:49:54+08:00",
   "items": [
+    {
+      "event_id": "osong-beauty-expo-opened-20261022",
+      "section": "industry",
+      "domain": "beauty",
+      "category": "K-Beauty · 出口与选品",
+      "quality_level": "常规更新",
+      "published_at": "2026-10-22",
+      "event_occurred_at": "2026-10-22",
+      "first_disclosed_at": "2026-10-22",
+      "republished_at": null,
+      "headline": "五松美妆博览会开幕，聚焦韩国美妆出口对接",
+      "summary": "2026五松化妆品美容博览会于10月22日在清州OSCO开幕，持续至24日，涵盖护肤、彩妆、原料及美容技术。主办方公布展期，韩联社报道开幕，韩法商会另行发布了自身参展及商务配对安排。",
+      "why_it_matters": "可从展商和商务配对名单中筛选韩国新品与供应商线索，关注产品差异及跨境合作机会。参展不等同于中国市场销售增长，仍需验证本地需求和合规条件。",
+      "primary_source": "五松美妆博览会官网",
+      "primary_url": "https://eng.osongbeautyexpo.kr/",
+      "independent_source_count": 1,
+      "evidence_has_primary": true,
+      "verification_status": "verified",
+      "korea_related": true,
+      "evidence_sources": [
+        {
+          "name": "主办方官网：展期与地点",
+          "url": "https://eng.osongbeautyexpo.kr/",
+          "kind": "primary"
+        },
+        {
+          "name": "韩法商会：自身参展及商务配对安排（非通稿转载）",
+          "url": "https://www.fkcci.com/ko/evenements/calendrier/e/event/오송-코스메틱-뷰티-엑스포-코리아-2026.html",
+          "kind": "independent"
+        },
+        {
+          "name": "韩联社10月22日开幕报道",
+          "url": "https://m-cn.yna.co.kr/view/ACK20261022002700881?section=economy/index",
+          "kind": "corroborating"
+        }
+      ]
+    },
     {
       "event_id": "korea-kbrand-authentication-launch-20261007",
       "section": "industry",
@@ -22,56 +59,16 @@
       "verification_status": "verified",
       "korea_related": true,
       "evidence_sources": [
-        {"name": "韩国知识产权部门公告", "url": "https://www.kipo.go.kr/ko/kpoBultnDetail.do?aprchId=BUT0000029&menuCd=SCD0200618&ntatcSeq=21074&sysCd=SCD02", "kind": "primary"},
-        {"name": "AFP 经 CNA 报道", "url": "https://www.channelnewsasia.com/east-asia/south-korea-new-brand-scheme-counterfeits-6438536", "kind": "independent"}
-      ]
-    },
-    {
-      "event_id": "pinterest-beauty-trend-report-20261006",
-      "section": "industry",
-      "domain": "beauty",
-      "category": "美妆行业 · 内容趋势",
-      "quality_level": "常规更新",
-      "published_at": "2026-10-06",
-      "event_occurred_at": "2026-10-06",
-      "first_disclosed_at": "2026-10-06",
-      "republished_at": null,
-      "headline": "Pinterest 首份美妆趋势报告聚焦细分妆容与个性化搜索",
-      "summary": "Pinterest 10月6日发布首份美妆趋势报告，显示用户正搜索更具体的美甲、发色和妆效组合，例如猫眼美甲、樱桃可乐发色和云感底妆。搜索趋势仅反映该平台样本，不等同于中国市场成交趋势。",
-      "why_it_matters": "种草选题可从泛化功效词转向可被检索的颜色、质地与场景组合，但需用抖音、小红书和天猫本地数据验证需求后再投入。",
-      "primary_source": "Pinterest 官方报告",
-      "primary_url": "https://newsroom.pinterest.com/en-sg/news/beauty-trend-report-2026/",
-      "independent_source_count": 1,
-      "evidence_has_primary": true,
-      "verification_status": "verified",
-      "korea_related": false,
-      "evidence_sources": [
-        {"name": "Pinterest 官方报告", "url": "https://newsroom.pinterest.com/en-sg/news/beauty-trend-report-2026/", "kind": "primary"},
-        {"name": "TheIndustry.beauty", "url": "https://theindustry.beauty/cherry-cola-hair-cafe-nails-and-cloud-skin-pinterest-predicts-autumns-biggest-beauty-trends/", "kind": "independent"}
-      ]
-    },
-    {
-      "event_id": "mary-kay-kbeauty-texture-edit-20261005",
-      "section": "industry",
-      "domain": "beauty",
-      "category": "K-Beauty · 全球渠道",
-      "quality_level": "常规更新",
-      "published_at": "2026-10-05",
-      "event_occurred_at": "2026-10-05",
-      "first_disclosed_at": "2026-10-05",
-      "republished_at": "2026-10-07",
-      "headline": "Mary Kay 推出韩国制造护肤限定系列，覆盖 40 个市场",
-      "summary": "Mary Kay 10月5日发布 K-Beauty Texture Edit 限定系列，包含卸妆膏、蜗牛凝胶眼贴和胶原保湿凝胶，称其在 40 个市场销售；10月7日行业媒体继续报道。40 市场为品牌公布的覆盖范围，非独立核实的实际销量。",
-      "why_it_matters": "国际品牌正在以韩国制造和 PDRN、蜗牛黏液等成分组合切入 K-Beauty 需求。韩国事业部可关注同类功效产品的竞争定位和跨市场商品表达。",
-      "primary_source": "Mary Kay 官方公告",
-      "primary_url": "https://newsroom.marykay.com/media/mary-kay-introduces-the-k-beauty-texture-edit/",
-      "independent_source_count": 1,
-      "evidence_has_primary": true,
-      "verification_status": "verified",
-      "korea_related": true,
-      "evidence_sources": [
-        {"name": "Mary Kay 官方公告", "url": "https://newsroom.marykay.com/media/mary-kay-introduces-the-k-beauty-texture-edit/", "kind": "primary"},
-        {"name": "CEW 美妆行业编辑报道", "url": "https://cew.org/beauty_news/beautys-top-headlines-october-7-2026/", "kind": "independent"}
+        {
+          "name": "韩国知识产权部门公告",
+          "url": "https://www.kipo.go.kr/ko/kpoBultnDetail.do?aprchId=BUT0000029&menuCd=SCD0200618&ntatcSeq=21074&sysCd=SCD02",
+          "kind": "primary"
+        },
+        {
+          "name": "AFP 经 CNA 报道",
+          "url": "https://www.channelnewsasia.com/east-asia/south-korea-new-brand-scheme-counterfeits-6438536",
+          "kind": "independent"
+        }
       ]
     },
     {
@@ -94,8 +91,16 @@
       "verification_status": "verified",
       "korea_related": false,
       "evidence_sources": [
-        {"name": "OpenAI 官方公告", "url": "https://openai.com/index/gpt-6-for-everyone/", "kind": "primary"},
-        {"name": "TechCrunch 独立报道", "url": "https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/", "kind": "independent"}
+        {
+          "name": "OpenAI 官方公告",
+          "url": "https://openai.com/index/gpt-6-for-everyone/",
+          "kind": "primary"
+        },
+        {
+          "name": "TechCrunch 独立报道",
+          "url": "https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/",
+          "kind": "independent"
+        }
       ]
     },
     {
@@ -118,8 +123,48 @@
       "verification_status": "verified",
       "korea_related": false,
       "evidence_sources": [
-        {"name": "Anthropic 官方发布", "url": "https://www.anthropic.com/claude-haiku-5-5", "kind": "primary"},
-        {"name": "SiliconANGLE 独立报道", "url": "https://siliconangle.com/2026/10/07/anthropic-releases-claude-haiku-5-5-small-model-and-halves-sonnet-5-5-cache-read-prices/", "kind": "independent"}
+        {
+          "name": "Anthropic 官方发布",
+          "url": "https://www.anthropic.com/claude-haiku-5-5",
+          "kind": "primary"
+        },
+        {
+          "name": "SiliconANGLE 独立报道",
+          "url": "https://siliconangle.com/2026/10/07/anthropic-releases-claude-haiku-5-5-small-model-and-halves-sonnet-5-5-cache-read-prices/",
+          "kind": "independent"
+        }
+      ]
+    },
+    {
+      "event_id": "pinterest-beauty-trend-report-20261006",
+      "section": "industry",
+      "domain": "beauty",
+      "category": "美妆行业 · 内容趋势",
+      "quality_level": "常规更新",
+      "published_at": "2026-10-06",
+      "event_occurred_at": "2026-10-06",
+      "first_disclosed_at": "2026-10-06",
+      "republished_at": null,
+      "headline": "Pinterest 首份美妆趋势报告聚焦细分妆容与个性化搜索",
+      "summary": "Pinterest 10月6日发布首份美妆趋势报告，显示用户正搜索更具体的美甲、发色和妆效组合，例如猫眼美甲、樱桃可乐发色和云感底妆。搜索趋势仅反映该平台样本，不等同于中国市场成交趋势。",
+      "why_it_matters": "种草选题可从泛化功效词转向可被检索的颜色、质地与场景组合，但需用抖音、小红书和天猫本地数据验证需求后再投入。",
+      "primary_source": "Pinterest 官方报告",
+      "primary_url": "https://newsroom.pinterest.com/en-sg/news/beauty-trend-report-2026/",
+      "independent_source_count": 1,
+      "evidence_has_primary": true,
+      "verification_status": "verified",
+      "korea_related": false,
+      "evidence_sources": [
+        {
+          "name": "Pinterest 官方报告",
+          "url": "https://newsroom.pinterest.com/en-sg/news/beauty-trend-report-2026/",
+          "kind": "primary"
+        },
+        {
+          "name": "TheIndustry.beauty",
+          "url": "https://theindustry.beauty/cherry-cola-hair-cafe-nails-and-cloud-skin-pinterest-predicts-autumns-biggest-beauty-trends/",
+          "kind": "independent"
+        }
       ]
     }
   ]
