@@ -280,13 +280,13 @@ function renderUnit(unit, report, day, progress, showMondayWeekend) {
   attainment.append(attainmentValue, attainmentDetail);
   quality.append(returns, attainment);
   const comparisons = element('div', { className: `comparison-strip${showMondayWeekend ? ' monday-weekend' : ''}` });
-  for (const [label, result, formatter] of [
+  for (const [index, [label, result, formatter]] of [
     ['同比', unit.year_over_year, percent],
     ['环比', unit.month_over_month, percent],
     ['本周工作日净销售', unit.weekday_net_sales, money],
     ...weekendMetricItems(unit, report, showMondayWeekend),
-  ]) {
-    const item = element('div', { className: 'comparison-item' });
+  ].entries()) {
+    const item = element('div', { className: `comparison-item${showMondayWeekend && index >= 3 ? ' weekend-card' : ''}` });
     addText(item, 'div', label, 'comparison-label');
     const value = element('div', { className: 'comparison-value' });
     value.append(metricView(result, formatter));
@@ -420,14 +420,14 @@ function renderOngredientsChannels(report) {
 
   const weekend = channelData.weekend_net_sales;
   if (weekend && weekend.sunday_date === channelData.report_date) {
-    const strip = element('div', { id: 'feishu-weekend', className: 'comparison-strip' });
+    const strip = element('div', { id: 'feishu-weekend', className: 'comparison-strip monday-weekend' });
     strip.hidden = true;
     for (const [label, value] of [
       [`周六净销售 · ${weekend.saturday_date}`, weekend.saturday],
       [`周日净销售 · ${weekend.sunday_date}`, weekend.sunday],
       ['上周末净销售合计（TTL）', weekend.total],
     ]) {
-      const item = element('div', { className: 'comparison-item' });
+      const item = element('div', { className: 'comparison-item weekend-card' });
       addText(item, 'div', label, 'comparison-label');
       addText(item, 'div', value == null ? '待补数据' : money(value), 'comparison-value');
       strip.append(item);
