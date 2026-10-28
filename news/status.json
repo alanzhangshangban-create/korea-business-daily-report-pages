@@ -1,1 +1,5 @@
-{"status":"no_qualified_update","checked_at":"2026-10-28T14:55:06+08:00","item_count":0,"latest_event_date":null}
+{
+  "status": "review_required",
+  "checked_at": "2026-10-28T14:06:55.346Z",
+  "item_count": 0
+}
