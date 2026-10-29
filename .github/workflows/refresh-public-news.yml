@@ -16,9 +16,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Scan public RSS leads
+      - name: Collect and validate public news
         run: node scripts/refresh-public-news.mjs
-      - name: Commit scan status
+      - name: Commit verified update or check status
         run: |
           git add -- news/latest.json news/status.json
           git diff --cached --quiet && exit 0

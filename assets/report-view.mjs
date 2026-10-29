@@ -393,7 +393,7 @@ function renderOngredientsChannels(report) {
   const card = element('div', { className: 'card channel-card' });
   const channelData = report.ongredients_channels;
   if (!channelData) {
-    addText(card, 'div', '飞书源待补数据；Hue 七品牌经营数据仍按独立口径展示。', 'empty');
+    addText(card, 'div', '飞书源待补数据；Hue 经营数据仍按独立口径展示。', 'empty');
     section.append(card);
     return section;
   }
@@ -403,7 +403,7 @@ function renderOngredientsChannels(report) {
   addText(lead, 'div', channelData.brand, 'channel-brand');
   addText(lead, 'div', channelData.unsplit_rows?.length
     ? '达人、自营合计仅含已拆分部分，小红书已计入。未拆分渠道单列支付总计，不分配到达人或自营，不重复计入 Hue 净销售。'
-    : '飞书达人和自营按四个平台合计，不计入七品牌净销售额。小红书同时单列明细，已计入上方达人和自营总计。', 'channel-note');
+    : '飞书达人和自营按四个平台合计，不重复计入韩国事业部净销售额。小红书同时单列明细，已计入上方达人和自营总计。', 'channel-note');
   const kpis = element('div', { className: 'channel-kpis' });
   for (const [label, value] of [['达人', channelData.dabo_sales], ['自营', channelData.self_operated_sales]]) {
     const kpi = element('div', { className: 'channel-kpi' });

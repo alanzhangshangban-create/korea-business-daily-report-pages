@@ -1,5 +1,6 @@
 {
-  "status": "review_required",
-  "checked_at": "2026-10-28T14:06:55.346Z",
-  "item_count": 0
+  "status": "no_qualified_update",
+  "checked_at": "2026-10-29T06:45:00.000Z",
+  "item_count": 0,
+  "latest_event_date": null
 }
