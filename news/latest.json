@@ -1,34 +1,5 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-30T02:59:07.000Z",
-  "items": [
-    {
-      "event_id": "douyin-platform-topup-rules-20261028",
-      "section": "operations_ai",
-      "verification_status": "verified",
-      "category": "中国电商 · 抖音平台规则",
-      "quality_level": "重要动态",
-      "published_at": "2026-10-28T11:45:00+08:00",
-      "headline": "抖音电商发布「平台加补」通用规则，部分退款不返还平台加补",
-      "summary": "抖音电商规则明确，平台加补按 SKU 自动生效；发生部分退款、仅退部分商品或在活动结束后完成退款时，加补不返还。加补成本可由平台、商家或达人单独或共同承担。",
-      "why_it_matters": "韩国品牌在抖音小店及全球购参加大促时，需要把平台加补、达人共担和退款条件纳入价格与售后核算，避免将部分退款后的补贴误计为可返还金额。",
-      "primary_source": "抖音电商学习中心",
-      "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJsKYbh2NDvA",
-      "evidence_has_primary": true,
-      "independent_source_count": 1,
-      "korea_related": true,
-      "evidence_sources": [
-        {
-          "kind": "primary",
-          "name": "抖音电商学习中心 · 「平台加补」优惠通用规则",
-          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJsKYbh2NDvA"
-        },
-        {
-          "kind": "independent",
-          "name": "China Market Brief · 规则摘要与交叉核验",
-          "url": "https://chinamarketbrief.com/en/insight/douyin-platform-subsidy-general-rules-2026/"
-        }
-      ]
-    }
-  ]
+  "generated_at": "2026-11-02T02:43:22.456Z",
+  "items": []
 }
