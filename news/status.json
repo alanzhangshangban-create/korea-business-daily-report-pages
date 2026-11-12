@@ -1,11 +1,5 @@
 {
-  "status": "no_qualified_update",
-  "checked_at": "2026-11-12T06:09:16.003Z",
-  "item_count": 0,
-  "latest_event_date": null,
-  "coverage": {
-    "industry": true,
-    "competitor_watch": true,
-    "platform_operations": true
-  }
+  "status": "retained",
+  "checked_at": "2026-11-12T16:01:53.609Z",
+  "item_count": 0
 }
