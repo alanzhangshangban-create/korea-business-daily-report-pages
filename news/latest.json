@@ -1,5 +1,32 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-18T05:56:12.488Z",
-  "items": []
+  "generated_at": "2026-11-19T02:50:25.868Z",
+  "items": [
+    {
+      "event_id": "shiseido-aupres-idg-transfer-20261117",
+      "section": "industry",
+      "category": "美妆行业与中国市场",
+      "headline": "资生堂将欧珀莱运营主体全部股权转让给IDG资本主导财团",
+      "published_at": "2026-11-17T08:00:00.000Z",
+      "summary": "资生堂已签署协议，将持有欧珀莱运营主体资生堂丽源化妆品有限公司的100%股权转让给IDG资本主导的投资者财团，交易包括北京工厂及生产设备；转让价未披露，预计于2026年第四季度至2027年第一季度完成。",
+      "why_it_matters": "欧珀莱将由中国投资方主导独立经营，后续商品创新、数字化和渠道投入节奏可能调整；韩国事业部可持续关注其在天猫、抖音和线下渠道的价格、投放与新品变化。",
+      "primary_source": "Shiseido Company",
+      "primary_url": "https://corp.shiseido.com/en/news/detail.html?n=00000000004248",
+      "independent_source_count": 1,
+      "evidence_has_primary": true,
+      "verification_status": "verified",
+      "evidence_sources": [
+        {
+          "name": "Shiseido Company official disclosure",
+          "url": "https://corp.shiseido.com/en/news/detail.html?n=00000000004248",
+          "kind": "primary"
+        },
+        {
+          "name": "新京报贝壳财经",
+          "url": "https://www.bjnews.com.cn/detail/1794983140129286.html",
+          "kind": "independent"
+        }
+      ]
+    }
+  ]
 }

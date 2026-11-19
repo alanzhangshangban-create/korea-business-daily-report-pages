@@ -1,5 +1,11 @@
 {
-  "status": "retained",
-  "checked_at": "2026-11-18T16:32:41.562Z",
-  "item_count": 0
+  "status": "updated",
+  "checked_at": "2026-11-19T02:50:25.868Z",
+  "item_count": 1,
+  "latest_event_date": "2026-11-17",
+  "coverage": {
+    "industry": true,
+    "competitor_watch": true,
+    "platform_operations": true
+  }
 }
