@@ -1,29 +1,143 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-20T02:43:39.748Z",
+  "generated_at": "2026-11-24T02:52:20.778Z",
   "items": [
     {
-      "event_id": "shiseido-aupres-idg-transfer-20261117",
-      "section": "industry",
-      "category": "美妆行业与中国市场",
-      "headline": "资生堂将欧珀莱运营主体全部股权转让给IDG资本主导财团",
-      "published_at": "2026-11-17T08:00:00.000Z",
-      "summary": "资生堂已签署协议，将持有欧珀莱运营主体资生堂丽源化妆品有限公司的100%股权转让给IDG资本主导的投资者财团，交易包括北京工厂及生产设备；转让价未披露，预计于2026年第四季度至2027年第一季度完成。",
-      "why_it_matters": "欧珀莱将由中国投资方主导独立经营，后续商品创新、数字化和渠道投入节奏可能调整；韩国事业部可持续关注其在天猫、抖音和线下渠道的价格、投放与新品变化。",
-      "primary_source": "Shiseido Company",
-      "primary_url": "https://corp.shiseido.com/en/news/detail.html?n=00000000004248",
+      "event_id": "amorepacific-beautytech-awards-20261123",
+      "section": "featured",
+      "domain": "beauty",
+      "category": "K-Beauty与美妆科技",
+      "quality_level": "重点动态",
+      "published_at": "2026-11-23T00:00:00.000Z",
+      "headline": "爱茉莉太平洋在东京发布AI、设备与生物美妆科技战略",
+      "summary": "爱茉莉太平洋在ASIA BEAUTYTECH AWARDS 2026介绍以AI、设备和生物技术为核心的美妆科技方向，旗下makeON产品获得企业组大奖。",
+      "why_it_matters": "韩国头部美妆集团将AI与设备明确列为研发和产品化重点，值得持续跟踪其新品节奏和渠道教育方式。",
+      "primary_source": "Amorepacific Group",
+      "primary_url": "https://www.apgroup.com/int/ko/news/2026-11-23-3.html",
       "independent_source_count": 1,
       "evidence_has_primary": true,
       "verification_status": "verified",
       "evidence_sources": [
         {
-          "name": "Shiseido Company official disclosure",
-          "url": "https://corp.shiseido.com/en/news/detail.html?n=00000000004248",
+          "name": "Amorepacific Group",
+          "url": "https://www.apgroup.com/int/ko/news/2026-11-23-3.html",
           "kind": "primary"
         },
         {
-          "name": "新京报贝壳财经",
-          "url": "https://www.bjnews.com.cn/detail/1794983140129286.html",
+          "name": "绿翊合规美妆日报",
+          "url": "https://www.lv-1.cn/BeautyNews/index.php?keyword=%E8%A1%8C%E4%B8%9A%E6%97%A5%E6%8A%A5",
+          "kind": "independent"
+        }
+      ]
+    },
+    {
+      "event_id": "shiseido-men-gel-cleanser-20261120",
+      "section": "beauty",
+      "domain": "beauty",
+      "category": "美妆新品",
+      "quality_level": "常规更新",
+      "published_at": "2026-11-20T06:00:00.000Z",
+      "headline": "SHISEIDO MEN发布免起泡黑色凝胶洁面产品",
+      "summary": "SHISEIDO MEN宣布将于2027年1月推出Pore Purifying Gel Cleanser，以黑色免起泡凝胶和角栓分解配方为卖点。",
+      "why_it_matters": "男士清洁赛道继续围绕便捷使用与毛孔功效升级，可作为同类新品定位和内容沟通参考。",
+      "primary_source": "Shiseido",
+      "primary_url": "https://corp.shiseido.com/jp/news/detail.html?n=00000000004237",
+      "independent_source_count": 1,
+      "evidence_has_primary": true,
+      "verification_status": "verified",
+      "evidence_sources": [
+        {
+          "name": "Shiseido",
+          "url": "https://corp.shiseido.com/jp/news/detail.html?n=00000000004237",
+          "kind": "primary"
+        },
+        {
+          "name": "floortok Journal",
+          "url": "https://www.floortok.com/journal/shiseido-men-meltexgel-cleanser-2026",
+          "kind": "independent"
+        }
+      ]
+    },
+    {
+      "event_id": "shiseido-uviolex-anessa-20261120",
+      "section": "beauty",
+      "domain": "beauty",
+      "category": "防晒技术与新品",
+      "quality_level": "常规更新",
+      "published_at": "2026-11-20T05:30:00.000Z",
+      "headline": "资生堂将紫外线防御剂Uviolex用于安热沙新品",
+      "summary": "资生堂宣布安热沙金色防晒乳将采用Uviolex紫外线防御剂与新光扩散技术，并计划于2027年2月上市。",
+      "why_it_matters": "防晒品类继续以独家原料和肤感技术建立差异化，可能影响来年春夏新品传播重点。",
+      "primary_source": "Shiseido",
+      "primary_url": "https://corp.shiseido.com/jp/news/detail.html?n=00000000004243",
+      "independent_source_count": 1,
+      "evidence_has_primary": true,
+      "verification_status": "verified",
+      "evidence_sources": [
+        {
+          "name": "Shiseido",
+          "url": "https://corp.shiseido.com/jp/news/detail.html?n=00000000004243",
+          "kind": "primary"
+        },
+        {
+          "name": "サードニュース",
+          "url": "https://news.3rd-in.co.jp/article/0041fc02-e4ab-11f1-bacd-9ca3ba09c411",
+          "kind": "independent"
+        }
+      ]
+    },
+    {
+      "event_id": "anthropic-ipo-close-20261120",
+      "section": "ai",
+      "domain": "ai",
+      "category": "AI产业",
+      "quality_level": "重点动态",
+      "published_at": "2026-11-20T05:00:00.000Z",
+      "headline": "Anthropic完成首次公开募股及同步私募交割",
+      "summary": "Anthropic宣布完成首次公开募股和同步私募交割，承销商额外购股权全部行使。",
+      "why_it_matters": "大规模融资将影响前沿模型算力投入、商业化速度和行业竞争格局。",
+      "primary_source": "Anthropic",
+      "primary_url": "https://www.anthropic.com/news/ipo-close",
+      "independent_source_count": 1,
+      "evidence_has_primary": true,
+      "verification_status": "verified",
+      "evidence_sources": [
+        {
+          "name": "Anthropic",
+          "url": "https://www.anthropic.com/news/ipo-close",
+          "kind": "primary"
+        },
+        {
+          "name": "Associated Press",
+          "url": "https://apnews.com/article/b6a74b8949021207dc162fcc876c4649",
+          "kind": "independent"
+        }
+      ]
+    },
+    {
+      "event_id": "openai-medchembench-20261120",
+      "section": "ai",
+      "domain": "ai",
+      "category": "AI研究与评测",
+      "quality_level": "常规更新",
+      "published_at": "2026-11-20T04:30:00.000Z",
+      "headline": "OpenAI发布药物化学推理基准MedChemBench",
+      "summary": "OpenAI发布MedChemBench，用于评估模型读取分子结构、解释实验结果和选择后续候选化合物的能力。",
+      "why_it_matters": "行业正在把通用模型评测延伸到高专业门槛场景，为AI在研发决策中的边界提供更具体证据。",
+      "primary_source": "OpenAI",
+      "primary_url": "https://openai.com/index/introducing-medchembench/",
+      "independent_source_count": 1,
+      "evidence_has_primary": true,
+      "verification_status": "verified",
+      "evidence_sources": [
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/index/introducing-medchembench/",
+          "kind": "primary"
+        },
+        {
+          "name": "日本時事新聞",
+          "url": "https://jpjj.jp/articles/openai-medchembench/",
           "kind": "independent"
         }
       ]
