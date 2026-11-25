@@ -1,143 +1,143 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-24T02:52:20.778Z",
+  "generated_at": "2026-11-25T02:45:27.967Z",
   "items": [
     {
-      "event_id": "amorepacific-beautytech-awards-20261123",
+      "event_id": "k-brand-glow-week-20261124",
       "section": "featured",
       "domain": "beauty",
-      "category": "K-Beauty与美妆科技",
+      "category": "韩国美妆出海",
       "quality_level": "重点动态",
-      "published_at": "2026-11-23T00:00:00.000Z",
-      "headline": "爱茉莉太平洋在东京发布AI、设备与生物美妆科技战略",
-      "summary": "爱茉莉太平洋在ASIA BEAUTYTECH AWARDS 2026介绍以AI、设备和生物技术为核心的美妆科技方向，旗下makeON产品获得企业组大奖。",
-      "why_it_matters": "韩国头部美妆集团将AI与设备明确列为研发和产品化重点，值得持续跟踪其新品节奏和渠道教育方式。",
-      "primary_source": "Amorepacific Group",
-      "primary_url": "https://www.apgroup.com/int/ko/news/2026-11-23-3.html",
+      "published_at": "2026-11-24T00:00:00.000Z",
+      "headline": "韩国 K-Brand GLOW WEEK 在首尔开幕",
+      "summary": "韩国中小企业主管部门在首尔圣水举办面向海外消费者和买家的活动，展示95家企业的产品，并安排出口和渠道入驻洽谈。",
+      "why_it_matters": "可跟踪韩国独立美妆品牌的海外采购对接和零售渠道布局。",
+      "primary_source": "韩国政策简报",
+      "primary_url": "https://m.korea.kr/briefing/pressReleaseView.do?newsId=156790574",
       "independent_source_count": 1,
       "evidence_has_primary": true,
       "verification_status": "verified",
       "evidence_sources": [
         {
-          "name": "Amorepacific Group",
-          "url": "https://www.apgroup.com/int/ko/news/2026-11-23-3.html",
+          "name": "韩国政策简报",
+          "url": "https://m.korea.kr/briefing/pressReleaseView.do?newsId=156790574",
           "kind": "primary"
         },
         {
-          "name": "绿翊合规美妆日报",
-          "url": "https://www.lv-1.cn/BeautyNews/index.php?keyword=%E8%A1%8C%E4%B8%9A%E6%97%A5%E6%8A%A5",
+          "name": "韩联社",
+          "url": "https://www.fnnews.com/news/202611241502313092",
           "kind": "independent"
         }
       ]
     },
     {
-      "event_id": "shiseido-men-gel-cleanser-20261120",
+      "event_id": "oliveyoung-global-black-friday-20261124",
       "section": "beauty",
       "domain": "beauty",
-      "category": "美妆新品",
+      "category": "跨境美妆零售",
       "quality_level": "常规更新",
-      "published_at": "2026-11-20T06:00:00.000Z",
-      "headline": "SHISEIDO MEN发布免起泡黑色凝胶洁面产品",
-      "summary": "SHISEIDO MEN宣布将于2027年1月推出Pore Purifying Gel Cleanser，以黑色免起泡凝胶和角栓分解配方为卖点。",
-      "why_it_matters": "男士清洁赛道继续围绕便捷使用与毛孔功效升级，可作为同类新品定位和内容沟通参考。",
-      "primary_source": "Shiseido",
-      "primary_url": "https://corp.shiseido.com/jp/news/detail.html?n=00000000004237",
+      "published_at": "2026-11-24T00:00:00.000Z",
+      "headline": "Olive Young 公布黑五跨境活动安排",
+      "summary": "韩国零售商 Olive Young 公布黑五安排，澳大利亚、英国和加拿大站活动为11月22日至28日，美国站为11月23日至29日。",
+      "why_it_matters": "可对照不同市场的促销起止日期和品牌商品组合。",
+      "primary_source": "CJ Olive Young",
+      "primary_url": "https://corp.oliveyoung.com/en/newsroom/editorial/374",
       "independent_source_count": 1,
       "evidence_has_primary": true,
       "verification_status": "verified",
       "evidence_sources": [
         {
-          "name": "Shiseido",
-          "url": "https://corp.shiseido.com/jp/news/detail.html?n=00000000004237",
+          "name": "CJ Olive Young",
+          "url": "https://corp.oliveyoung.com/en/newsroom/editorial/374",
           "kind": "primary"
         },
         {
-          "name": "floortok Journal",
-          "url": "https://www.floortok.com/journal/shiseido-men-meltexgel-cleanser-2026",
+          "name": "Who What Wear",
+          "url": "https://www.whowhatwear.com/beauty/skin/best-korean-beauty-products-sale-cyber-week-2026",
           "kind": "independent"
         }
       ]
     },
     {
-      "event_id": "shiseido-uviolex-anessa-20261120",
+      "event_id": "coupang-beauty-rocket-market-20261124",
       "section": "beauty",
       "domain": "beauty",
-      "category": "防晒技术与新品",
+      "category": "韩国电商渠道",
       "quality_level": "常规更新",
-      "published_at": "2026-11-20T05:30:00.000Z",
-      "headline": "资生堂将紫外线防御剂Uviolex用于安热沙新品",
-      "summary": "资生堂宣布安热沙金色防晒乳将采用Uviolex紫外线防御剂与新光扩散技术，并计划于2027年2月上市。",
-      "why_it_matters": "防晒品类继续以独家原料和肤感技术建立差异化，可能影响来年春夏新品传播重点。",
-      "primary_source": "Shiseido",
-      "primary_url": "https://corp.shiseido.com/jp/news/detail.html?n=00000000004243",
+      "published_at": "2026-11-24T00:00:00.000Z",
+      "headline": "Coupang 在 Rocket Fresh 开展美妆促销",
+      "summary": "Coupang 宣布在 Rocket Fresh 推出截至11月29日的美妆促销，45个品牌参与，覆盖约530种商品。",
+      "why_it_matters": "日常采购与美妆同单配送，为观察美妆复购和即时零售提供了案例。",
+      "primary_source": "Coupang",
+      "primary_url": "https://news.coupang.com/archives/68955/",
       "independent_source_count": 1,
       "evidence_has_primary": true,
       "verification_status": "verified",
       "evidence_sources": [
         {
-          "name": "Shiseido",
-          "url": "https://corp.shiseido.com/jp/news/detail.html?n=00000000004243",
+          "name": "Coupang",
+          "url": "https://news.coupang.com/archives/68955/",
           "kind": "primary"
         },
         {
-          "name": "サードニュース",
-          "url": "https://news.3rd-in.co.jp/article/0041fc02-e4ab-11f1-bacd-9ca3ba09c411",
+          "name": "韩联社",
+          "url": "https://www.yna.co.kr/view/AKR20261124109100030",
           "kind": "independent"
         }
       ]
     },
     {
-      "event_id": "anthropic-ipo-close-20261120",
+      "event_id": "anthropic-skills-over-mcp-20261124",
       "section": "ai",
       "domain": "ai",
-      "category": "AI产业",
-      "quality_level": "重点动态",
-      "published_at": "2026-11-20T05:00:00.000Z",
-      "headline": "Anthropic完成首次公开募股及同步私募交割",
-      "summary": "Anthropic宣布完成首次公开募股和同步私募交割，承销商额外购股权全部行使。",
-      "why_it_matters": "大规模融资将影响前沿模型算力投入、商业化速度和行业竞争格局。",
+      "category": "AI 工作流",
+      "quality_level": "常规更新",
+      "published_at": "2026-11-24T00:00:00.000Z",
+      "headline": "Claude 开放 Skills over MCP 公测",
+      "summary": "Anthropic 宣布 Claude 和 Claude Code 开启 Skills over MCP 公测，并推动 Tasks 与 Elicitation 正式可用。",
+      "why_it_matters": "连接服务可提供业务操作指引，较长的任务可异步运行，关键操作可中途向用户确认。",
       "primary_source": "Anthropic",
-      "primary_url": "https://www.anthropic.com/news/ipo-close",
+      "primary_url": "https://claude.com/fr/resources/articles/skills-over-mcp-tasks-and-more",
       "independent_source_count": 1,
       "evidence_has_primary": true,
       "verification_status": "verified",
       "evidence_sources": [
         {
           "name": "Anthropic",
-          "url": "https://www.anthropic.com/news/ipo-close",
+          "url": "https://claude.com/fr/resources/articles/skills-over-mcp-tasks-and-more",
           "kind": "primary"
         },
         {
-          "name": "Associated Press",
-          "url": "https://apnews.com/article/b6a74b8949021207dc162fcc876c4649",
+          "name": "Unite.AI",
+          "url": "https://www.unite.ai/anthropic-brings-server-supplied-skills-and-background-tasks-to-claude/",
           "kind": "independent"
         }
       ]
     },
     {
-      "event_id": "openai-medchembench-20261120",
+      "event_id": "maxon-plus-20261123",
       "section": "ai",
       "domain": "ai",
-      "category": "AI研究与评测",
+      "category": "AI 创意制作",
       "quality_level": "常规更新",
-      "published_at": "2026-11-20T04:30:00.000Z",
-      "headline": "OpenAI发布药物化学推理基准MedChemBench",
-      "summary": "OpenAI发布MedChemBench，用于评估模型读取分子结构、解释实验结果和选择后续候选化合物的能力。",
-      "why_it_matters": "行业正在把通用模型评测延伸到高专业门槛场景，为AI在研发决策中的边界提供更具体证据。",
-      "primary_source": "OpenAI",
-      "primary_url": "https://openai.com/index/introducing-medchembench/",
+      "published_at": "2026-11-23T00:00:00.000Z",
+      "headline": "Maxon 推出带 AI 辅助功能的 3D 制作服务",
+      "summary": "Maxon 发布 Maxon Plus，提供生成3D基础模型、探索纹理和浏览器审阅等服务，并支持 Cinema 4D 和 ZBrush 工作流。",
+      "why_it_matters": "电商视觉团队可评估它在产品场景概念稿和审阅协作中的应用。",
+      "primary_source": "Maxon",
+      "primary_url": "https://www.maxon.net/ko/article/introducing-maxon-plus-ai-assisted-3d-creation-and-3d-review-directed-by-the-artist",
       "independent_source_count": 1,
       "evidence_has_primary": true,
       "verification_status": "verified",
       "evidence_sources": [
         {
-          "name": "OpenAI",
-          "url": "https://openai.com/index/introducing-medchembench/",
+          "name": "Maxon",
+          "url": "https://www.maxon.net/ko/article/introducing-maxon-plus-ai-assisted-3d-creation-and-3d-review-directed-by-the-artist",
           "kind": "primary"
         },
         {
-          "name": "日本時事新聞",
-          "url": "https://jpjj.jp/articles/openai-medchembench/",
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/every-3d-artist-should-have-an-ai-assistant-maxon-says-as-it-launches-new-tools-and-agentic-licences",
           "kind": "independent"
         }
       ]

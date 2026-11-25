@@ -1,5 +1,10 @@
 {
-  "status": "retained",
-  "checked_at": "2026-11-24T18:57:24.935Z",
-  "item_count": 0
+  "status": "updated",
+  "checked_at": "2026-11-25T02:45:27.967Z",
+  "item_count": 5,
+  "latest_event_date": "2026-11-24",
+  "coverage": {
+    "beauty": true,
+    "ai": true
+  }
 }
